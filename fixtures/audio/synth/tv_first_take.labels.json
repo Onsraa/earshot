@@ -1,0 +1,56 @@
+[
+ {
+  "start": 0.7,
+  "end": 7.68,
+  "speaker": "OTHER",
+  "text": "Contre la fièvre, l'ibuprofène quatre cents, jusqu'à trois fois par jour. Demandez conseil à votre pharmacien."
+ },
+ {
+  "start": 8.38,
+  "end": 12.06,
+  "speaker": "DOCTOR",
+  "text": "Bonjour, installez-vous. Qu'est-ce qui vous amène aujourd'hui ?"
+ },
+ {
+  "start": 12.76,
+  "end": 21.65,
+  "speaker": "PATIENT",
+  "text": "Bonjour docteur. Depuis trois jours j'ai de la fièvre, autour de trente-neuf, mal à la tête, des courbatures partout. Je suis vraiment épuisé."
+ },
+ {
+  "start": 22.35,
+  "end": 25.8,
+  "speaker": "DOCTOR",
+  "text": "D'accord. Vous avez pris quelque chose pour la fièvre ?"
+ },
+ {
+  "start": 26.5,
+  "end": 36.84,
+  "speaker": "PATIENT",
+  "text": "Oui, ma mère travaille en pharmacie, elle me donne souvent de l'ibuprofène. Hier j'en ai pris quatre, des quatre cents. Et elle m'a conseillé de reprendre le travail dans trois jours."
+ },
+ {
+  "start": 37.54,
+  "end": 40.92,
+  "speaker": "DOCTOR",
+  "text": "Je vais vous examiner. Respirez fort par la bouche."
+ },
+ {
+  "start": 41.92,
+  "end": 55.18,
+  "speaker": "DOCTOR",
+  "text": "Bon, c'est une grippe. Non, l'ibuprofène on arrête, avec de la fièvre ce n'est pas une bonne idée. Vous allez prendre du paracétamol, trois fois mille milligrammes par jour, et vous reposer deux semaines. Je vous fais un arrêt."
+ },
+ {
+  "start": 55.88,
+  "end": 58.93,
+  "speaker": "PATIENT",
+  "text": "Deux semaines ? Je pensais reprendre lundi."
+ },
+ {
+  "start": 59.63,
+  "end": 66.46,
+  "speaker": "DOCTOR",
+  "text": "Non, deux semaines de repos, c'est important. Si la fièvre dure plus de cinq jours, on fera une prise de sang."
+ }
+]

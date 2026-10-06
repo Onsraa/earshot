@@ -1,0 +1,36 @@
+{
+  "_note": "Adult limits from RCP section 4.2 (ANSM/BDPM). Extracted 2026-10-06 by reading the section; every number must appear in its quote (checked by spikes/s8_verify_limits.py, re-implemented at the event by brain/reference.py). usual_daily_mg = maximum without medical advice; max_daily_mg = maximum on medical advice.",
+  "paracetamol": {
+    "substance": "paracetamol",
+    "population": "adult",
+    "usual_daily_mg": 3000,
+    "max_daily_mg": 4000,
+    "max_per_intake_mg": 1000,
+    "min_interval_h": 4,
+    "quote": "Adulte et enfant à partir de 50 kg (environ 15 ans) 1000 mg soit 1 g (1 comprimé) 4 heures minimum 3000 mg par jour soit 3 g (3 comprimés) … Uniquement sur avis médical et en l’absence de facteurs de risques concomitants, la posologie peut être augmentée jusqu'à 4000 mg (4 g) par jour",
+    "source_url": "https://base-donnees-publique.medicaments.gouv.fr/affichageDoc.php?specid=60234100&typedoc=R",
+    "product": "DOLIPRANE 1000 mg, comprimé (CIS 60234100), RCP mis à jour le 25/08/2025"
+  },
+  "ibuprofene": {
+    "substance": "ibuprofene",
+    "population": "adult",
+    "usual_daily_mg": null,
+    "max_daily_mg": 1200,
+    "max_per_intake_mg": 400,
+    "min_interval_h": 6,
+    "quote": "1 comprimé à 400 mg par prise, à renouveler si besoin au bout de 6 à 8 heures. Dans tous les cas, ne pas dépasser 3 comprimés à 400 mg par jour (1200 mg par jour). … Elles doivent être espacées d'au moins 6 heures.",
+    "source_url": "https://base-donnees-publique.medicaments.gouv.fr/affichageDoc.php?specid=63646874&typedoc=R",
+    "product": "ADVIL 400 mg, comprimé enrobé (CIS 63646874), RCP mis à jour le 13/02/2025"
+  },
+  "tramadol": {
+    "substance": "tramadol",
+    "population": "adult",
+    "usual_daily_mg": null,
+    "max_daily_mg": 400,
+    "max_per_intake_mg": 100,
+    "min_interval_h": 4,
+    "quote": "Normalement, la dose initiale de chlorhydrate de tramadol est de 50 à 100 mg (1 ou 2 gélules) suivie de 50 ou 100 mg toutes les 4 à 6 heures, sans dépasser une dose quotidienne de 400 mg (8 gélules)",
+    "source_url": "https://base-donnees-publique.medicaments.gouv.fr/affichageDoc.php?specid=67105161&typedoc=R",
+    "product": "TRAMADOL ALMUS 50 mg, gélule (CIS 67105161), RCP mis à jour le 19/03/2026"
+  }
+}

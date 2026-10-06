@@ -1,0 +1,50 @@
+[
+ {
+  "start": 0.7,
+  "end": 4.39,
+  "speaker": "DOCTOR",
+  "text": "Bonjour, installez-vous. Qu'est-ce qui vous amène aujourd'hui ?"
+ },
+ {
+  "start": 5.09,
+  "end": 13.98,
+  "speaker": "PATIENT",
+  "text": "Bonjour docteur. Depuis trois jours j'ai de la fièvre, autour de trente-neuf, mal à la tête, des courbatures partout. Je suis vraiment épuisé."
+ },
+ {
+  "start": 14.68,
+  "end": 18.12,
+  "speaker": "DOCTOR",
+  "text": "D'accord. Vous avez pris quelque chose pour la fièvre ?"
+ },
+ {
+  "start": 18.82,
+  "end": 29.17,
+  "speaker": "PATIENT",
+  "text": "Oui, ma mère travaille en pharmacie, elle me donne souvent de l'ibuprofène. Hier j'en ai pris quatre, des quatre cents. Et elle m'a conseillé de reprendre le travail dans trois jours."
+ },
+ {
+  "start": 29.87,
+  "end": 33.24,
+  "speaker": "DOCTOR",
+  "text": "Je vais vous examiner. Respirez fort par la bouche."
+ },
+ {
+  "start": 34.24,
+  "end": 47.5,
+  "speaker": "DOCTOR",
+  "text": "Bon, c'est une grippe. Non, l'ibuprofène on arrête, avec de la fièvre ce n'est pas une bonne idée. Vous allez prendre du paracétamol, trois fois mille milligrammes par jour, et vous reposer deux semaines. Je vous fais un arrêt."
+ },
+ {
+  "start": 48.2,
+  "end": 51.25,
+  "speaker": "PATIENT",
+  "text": "Deux semaines ? Je pensais reprendre lundi."
+ },
+ {
+  "start": 51.95,
+  "end": 58.78,
+  "speaker": "DOCTOR",
+  "text": "Non, deux semaines de repos, c'est important. Si la fièvre dure plus de cinq jours, on fera une prise de sang."
+ }
+]

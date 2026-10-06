@@ -1,0 +1,1701 @@
+<!doctype html>
+<html lang="fr" data-fr-theme>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no">
+  <title>Base de Données Publique des Médicaments</title>
+  <meta name="theme-color" content="#000091">  <link rel="apple-touch-icon" href="/build/dsfr/favicon/apple-touch-icon.png">  <link rel="icon" href="/build/dsfr/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="/build/dsfr/favicon/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="/build/dsfr/favicon/manifest.webmanifest"
+        crossorigin="use-credentials">
+    
+      <link rel="stylesheet" href="/build/dsfr/931.fd9f074b.css"><link rel="stylesheet" href="/build/dsfr/app.7e25ea17.css">
+  
+        <script src="/build/dsfr/runtime.c33b929f.js"></script><script src="/build/dsfr/27.23722826.js"></script><script src="/build/dsfr/306.ae8f0ef3.js"></script><script src="/build/dsfr/910.74b480b6.js"></script><script src="/build/dsfr/931.0eab88af.js"></script><script src="/build/dsfr/app.ebf2a1f2.js"></script>
+  
+  <script src="/build/dsfr/244.95001bc7.js"></script><script src="/build/dsfr/medicament.02957dad.js"></script>
+</head>
+<body id="top" class="fr-mb-12w">
+  <script type="text/javascript" nonce="Y1fVmhaRBdI8k5G1CPeQDw==">
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(["trackPageView"]);
+    _paq.push(["enableLinkTracking"]);
+    (function () {
+      var u = "https://stats.integra.fr/";
+      _paq.push(["setTrackerUrl", u + "matomo.php"]);
+      _paq.push(["setSiteId", '79']);
+      _paq.push(['setCookieSameSite', 'Lax']);
+      _paq.push(['setSecureCookie', true]);
+      var d = document, g = d.createElement("script"), s = d.getElementsByTagName("script")[0];
+      g.type = "text/javascript";
+      g.async = true;
+      g.src = u + "matomo.js";
+      s.parentNode.insertBefore(g, s);
+    })();
+  </script>
+<script type="module" nonce="Y1fVmhaRBdI8k5G1CPeQDw==">
+  const e = "system", t = "dark", c = "dark", o = "data-fr-theme", a = "data-fr-scheme", r = `:root[${o}], :root[${a}]`,
+    m = () => {
+      document.documentElement.setAttribute(o, c), document.documentElement.style.colorScheme = "dark"
+    }, n = () => {
+      window.matchMedia("(prefers-color-scheme: dark)").matches && m()
+    };
+  (() => {
+    if (document.documentElement.matches(r)) {
+      const c = (() => {
+        try {
+          return "localStorage" in window && null !== window.localStorage
+        } catch (e) {
+          return !1
+        }
+      })() ? localStorage.getItem("scheme") : "", o = document.documentElement.getAttribute(a);
+      switch (!0) {
+        case c === t:
+          m();
+          break;
+        case c === e:
+          n();
+          break;
+        case o === t:
+          m();
+          break;
+        case o === e:
+          n()
+      }
+    }
+  })();
+
+</script>
+<div class="fr-mb-12w">
+  <div class="fr-mb-6v">
+    <header role="banner" class="fr-header" aria-label="Bannière du site Base de Données Publique des Médicaments" id="section-container-header">
+  <div class="fr-header__body">
+    <div class="fr-container" aria-labelledby="section-container-header">
+      <div class="fr-header__body-row">
+        <div class="fr-header__brand fr-enlarge-link">
+          <div class="fr-header__brand-top">
+            <div class="fr-header__logo" role="img">
+              <p
+                class="fr-logo"
+                aria-describedby="tooltip-logo"
+                aria-label="Logo du MINISTÈRE DU TRAVAIL, DE LA SANTÉ, DES SOLIDARITÉS">
+                MINISTÈRE
+                <br>DU TRAVAIL, DE LA SANTÉ,
+                <br>DES SOLIDARITÉS
+                <br>ET DES FAMILLES
+              </p>
+              <span id="tooltip-logo" class="fr-tooltip fr-placement" role="tooltip" aria-hidden="true">Logo - Base de Données Publique des Médicaments - ministère</span>
+            </div>
+            <div class="fr-header__navbar">
+              <button class="fr-btn--menu fr-btn" data-fr-opened="false" aria-controls="modal-header__menu" id="button-8446"
+                      aria-label="Bouton de menu mode mobile"
+              </button>
+            </div>
+          </div>
+          <div class="fr-header__service">
+            <a href="/" role="link"
+              aria-describedby="tooltip-website-name"
+               aria-label="Accueil - Base de Données Publique des Médicaments"
+            >
+              <p class="fr-header__service-title homepage-header-website-name">
+                Base de Données Publique des Médicaments
+              </p>
+            </a>
+            <span id="tooltip-website-name" class="fr-tooltip fr-placement" role="tooltip" aria-hidden="true">
+              Accueil - Base de Données Publique des Médicaments
+            </span>
+          </div>
+        </div>
+        <div class="fr-header__tools">
+          <div class="fr-header__tools-links">
+            <ul class="fr-btns-group">
+              <li>
+                <a class="fr-icon-arrow-left-line fr-btn" href="https://sante.gouv.fr/soins-et-maladies/medicaments"
+                   role="link"
+                   aria-label="Lien de redirection vers le site internet medicaments.gouv.fr"
+                   aria-describedby="tooltip-medicament-gouv-link"
+                >
+                  Visiter medicaments.gouv.fr
+                </a>
+                <span id="tooltip-medicament-gouv-link" class="fr-tooltip fr-placement" role="tooltip" aria-hidden="true">
+                  Lien de redirection vers le site internet medicaments.gouv.fr
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="modal-header__menu" class="fr-header__menu fr-modal" aria-labelledby="button-8446">
+      <div class="fr-container">
+        <button aria-controls="modal-header__menu" class="fr-btn fr-btn--close" aria-label="Fermer le menu mobile">
+          Fermer
+        </button>
+        <div class="fr-header__menu-links fr-hidden"></div>
+        <nav class="fr-nav" id="header-navigation" role="navigation"
+     aria-label="Menu Principal">
+        <ul class="fr-nav__list" role="list">
+          <li class="fr-nav__item" role="listitem">
+            <a class="fr-nav__link"
+               href="/" role="link"
+               id="navigation-menu-principal-accueil"
+               aria-label="Lien de redirection vers la page d'accueil (lien de redirection)"
+                           >
+              Accueil
+            </a>
+          </li>
+          <li class="fr-nav__item" role="listitem">
+            <a class="fr-nav__link" href="/glossaire" role="link"
+               id="navigation-menu-principal-glossaire"
+               aria-label="Lien de redirection vers la page Glossaire (lien de redirection)"
+                          >Glossaire</a>
+          </li>
+          <li class="fr-nav__item" role="listitem">
+            <a class="fr-nav__link" href="/telechargement"
+               id="navigation-menu-principal-telechargement" role="link"
+               aria-label="Lien de redirection vers la page de telechargement (lien de redirection)"
+                          >Téléchargement</a>
+          </li>
+          <li class="fr-nav__item" role="listitem">
+            <a class="fr-nav__link" href="/contact" role="link"
+               id="navigation-menu-principal-contact"
+               aria-label="Lien de redirection vers la page de contact (lien de redirection)"
+                          >Contact</a>
+          </li>
+          <li class="fr-nav__item" role="listitem">
+            <a class="fr-nav__link" href="/aide" id="navigation-menu-principal-aide" role="link"
+               aria-label="Lien de redirection vers la page d'aide (lien de redirection)"
+                          >Aide</a>
+          </li>
+        </ul>
+</nav>
+      </div>
+  </div>
+  <div class="fr-notice fr-notice--info fr-no-print">
+    <div class="fr-container">
+        <div class="fr-notice__body">
+            <p>
+              <span class="fr-icon-info-fill fr-mr-2v" aria-hidden="true"></span>
+              <a target="_blank" rel="noopener external" aria-describedby="tooltip-notice-link" aria-label="Redirection vers la plateforme d'avis utilisateur - Lien de redirection" href="https://tally.so/r/3xpq1J" class="fr-notice__link" style="text-decoration: underline;">Quel est votre avis sur E-notice ?</a>
+              <span class="fr-tooltip fr-placement" id="tooltip-notice-link" role="tooltip" aria-hidden="true">Redirection vers la plateforme d'avis utilisateur - Lien de redirection</span>
+            </p>
+            <button aria-describedby="tooltip-notice-close-btn" aria-label="Masquer le message" id="button-1299" class="fr-btn--close fr-btn">Masquer le message</button>
+            <span class="fr-tooltip fr-placement" id="tooltip-notice-close-btn" role="tooltip" aria-hidden="true">Masquer le message</span>
+        </div>
+    </div>
+</div>
+</header>
+    <main role="main" id="content">
+      <div class="fr-container--fluid">
+        <div class="fr-mb-md-12w fr-grid-row fr-grid-row--gutters fr-grid-row--middle">
+            <div class="fr-container">
+    <div class="fr-editor">
+            <div class="fr-grid-row-gutters">
+        <div class="fr-col-12 fr-col-md-12 fr-col-sm-12 fr-pt-6v fr-pb-3v">
+          <div class="fr-header__tools">
+            <p class="fr-text--sm">
+              Dernière mise à jour le 29/09/2026
+            </p>
+          </div>
+
+          <ol class="fr-breadcrumb__list fr-pb-4v fr-no-print">
+            <li>
+              <a id="link_retour_resultat" href="/">
+                <span class="fr-icon-arrow-left-line fr-icon--sm" aria-hidden="true"></span>Retour aux résultats
+              </a>
+            </li>
+          </ol>
+          <h3
+            role="heading"
+            aria-labelledby="tabs-extrait-medicament"
+            aria-label="Titre du medicamant TRAMADOL ALMUS 50 mg, gélule"
+            aria-level="3"
+          >
+            TRAMADOL ALMUS 50 mg, gélule
+          </h3>
+
+          
+                      <div class="fr-tabs">
+              <ul class="fr-tabs__list" role="tablist"
+                  aria-label="Visuliser l'extrait du medicament TRAMADOL ALMUS 50 mg, gélule - Médicament  - BDPM">
+
+                                  <li role="presentation">
+                    <button id="tab-fiche-info" class="fr-tabs__tab fr-tabs__tab--icon-left"
+                            tabindex="0" role="tab" aria-selected="true" aria-controls="tabpanel-fiche-info-panel">
+                      Fiche info
+                    </button>
+                  </li>
+                
+                
+                                  <li role="presentation">
+                    <button id="tab-rcp" class="fr-tabs__tab  fr-tabs__tab--icon-left"
+                            tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-rcp-panel">
+                      Résumé des caractéristiques du produit
+                    </button>
+                  </li>
+                
+                                  <li role="presentation">
+                    <button id="tab-notice" class="fr-tabs__tab fr-tabs__tab--icon-left"
+                            tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-notice-panel">Notice
+                    </button>
+                  </li>
+                
+                                  <li role="presentation">
+                    <button id="tab-bon-usage" class="fr-tabs__tab  fr-tabs__tab--icon-left" tabindex="-1" role="tab"
+                            aria-selected="false" aria-controls="tabpanel-bon-usage-panel">Bon usage
+                    </button>
+                  </li>
+                              </ul>
+
+                                            <div id="tabpanel-fiche-info-panel" class="fr-tabs__panel fr-tabs__panel--selected" role="tabpanel"
+                     aria-labelledby="tabpanel-fiche-info" tabindex="0">
+                  <div class="fr-header-section-page-info">
+  <section class="fr-mb-3v fr-py-3v" id="top">
+    <div class="fr-grid-row fr-grid-row--gutters">
+
+      <div id="fiche-info-tags" class="fr-grid-row fr-grid-row--gap fr-col-md">
+                
+                          <p id="tag-ordonnance" class="fr-tag" aria-controls="fr-modal-tag-ordonnance" data-fr-opened="false">
+              <span class="fr-icon-file-text-fill">
+              </span>&nbsp;sur ordonnance uniquement
+          </p>
+        
+                
+                          <p id="tag-generique" class="fr-tag" aria-controls="fr-modal-tag-generique" data-fr-opened="false">
+              <span class="fr-icon-capsule-fill">
+              </span>&nbsp;générique
+          </p>
+              </div>
+
+      <div class="fr-col-12 fr-col-md aligncenter-md">
+        Date de l'autorisation : 08/04/2019
+      </div>
+
+      <div class="fr-col-12 fr-col-md fr-no-print print-div">
+        <button aria-label="Imprimer fiche info du médicament : TRAMADOL ALMUS 50 mg, gélule - Médicament  - BDPM" class="fr-link print-button">
+          <span aria-hidden="true" class="fr-icon-printer-fill"></span>
+          <span class="sr-only" rel="noopener noreferrer">Imprimer</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="fr-mb-3v fr-py-3v">
+    <div class="fr-grid-row fr-grid-row--gutters">
+      <div class="fr-col-12 fr-col-md">
+        <div>
+          <div class="fr-col">
+            <div class="fr-editor ">
+              
+              
+              
+              <div class="fr-col-12 fr-col-md-12 fr-col-sm-12 fr-py-1v"
+                   data-content="N0445335">
+                                  <div class="fr-notice fr-notice--info" style="margin-bottom: 40px;">
+                    <div class="fr-container">
+                      <div class="fr-notice__body">
+                        <p>
+                        <p class="fr-notice__desc">
+                          Ce médicament n'est ou ne sera bientôt plus disponible sur le marché.<br>
+                          Si vous prenez actuellement ce médicament, il vous est recommandé d'en parler avec votre médecin
+                          ou avec votre pharmacien qui pourra vous orienter vers un autre traitement.
+                        </p>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                
+                
+                
+                                  <div class="fr-grid-row">
+                    <div class="fr-col">
+                      <h5 role="heading" aria-level="5" id="heading-indications-therapeutiques">
+                        <span class="fr-icon-information-line" aria-hidden="true"
+                              aria-describedby="tooltip-link-indications"></span>
+                        <span id="tooltip-link-indications" class="fr-tooltip fr-placement" role="tooltip"
+                              aria-hidden="true">
+                          Indications thérapeutiques
+                        </span>
+                        Indications thérapeutiques
+
+                        <a class="fr-link fr-icon-arrow-up-fill fr-link--icon-left lien-retour-hautdepage"
+                           aria-label="Redirection vers le haut de page" aria-describedby="tooltip-link-page-top-1"
+                           href="#top"></a>
+                        <span id="tooltip-link-page-top-1" class="fr-tooltip fr-placement" role="tooltip"
+                              aria-hidden="true">
+                          Redirection vers le haut de page
+                        </span>
+                      </h5>
+                      <p aria-labelledby="heading-indications-therapeutiques">
+<p class=AmmCorpsTexte><a name="_Toc142279004"><span style='color:black'>Le tramadol (la substance de TRAMADOL ALMUS) est un antalgique (substance calmant la douleur) appartenant à la classe des opioïdes qui agit sur le système nerveux central. Il soulage la douleur en agissant sur des cellules nerveuses particulières de la moelle épinière et du cerveau.</span></a></p>
+<p class=AmmCorpsTexte><span style='color:black'>Ce médicament est indiqué dans le traitement des douleurs modérées à sévères. </span></p>
+</p>
+                    </div>
+                  </div>
+                
+                                  <div class="fr-grid-row">
+                    <div class="fr-col">
+                      <h5 role="heading" aria-level="5" id="heading-groupe-generique">Groupe(s) générique(s)
+                        <a class="fr-link fr-icon-arrow-up-fill fr-link--icon-left lien-retour-hautdepage"
+                           aria-label="Redirection vers le haut de page" aria-describedby="tooltip-link-page-top-2"
+                           href="#top"></a>
+                      </h5>
+                      <span id="tooltip-link-page-top-2" class="fr-tooltip fr-placement" role="tooltip"
+                            aria-hidden="true">
+                        Redirection vers le haut de page
+                      </span>
+                      <p aria-labelledby="heading-groupe-generique">Ce médicament appartient au(x) groupe(s) générique(s) suivants : <br/><ul role="list"><li role='listitem'><a href='/medicament/affiche/groupe-generique/67105161/242' aria-describedby='tooltip-medicament-generique-0'>TRAMADOL (CHLORHYDRATE DE) 50 mg - CONTRAMAL 50 mg, gélule - TOPALGIC 50 mg, gélule.</a><span id='tooltip-medicament-generique-0' class='fr-tooltip fr-placement' role='tooltip' aria-hidden='true'>Ouvrir la page de détail sur ce groupe générique</span></li></ul></p>
+                    </div>
+                  </div>
+                
+                                  <div class="fr-grid-row">
+                    <div class="fr-col">
+                      <h5 role="heading" aria-level="5" id="heading-composition-substances-active"> Composition en
+                        substances actives
+                        <a class="fr-link fr-icon-arrow-up-fill fr-link--icon-left lien-retour-hautdepage"
+                           aria-label="Redirection vers le haut de page" aria-describedby="tooltip-link-page-top-3"
+                           href="#top"></a>
+                      </h5>
+                      <span id="tooltip-link-page-top-3" class="fr-tooltip fr-placement" role="tooltip"
+                            aria-hidden="true">
+                        Redirection vers le haut de page
+                      </span>
+                      <p aria-labelledby="heading-composition-substances-active" aria-label="Composition en substances actives" id="list-composition-substances-active"><ul class="ul-no-style" role="list" style="list-style-type: none;"><li><span class="fr-icon-layout-grid-fill" aria-hidden="true"></span>
+ Gélule ( Composition pour une gélules )<ul role="list"><li role="listitem" style="list-style-type: none;"> > chlorhydrate de tramadol<span class="fr-icon-arrow-right-fill" aria-hidden="true"></span> <span class="italique">50 mg </span></ul></li></ul>
+                    </div>
+                  </div>
+                
+                                  <div class='fr-grid-row'><div class='fr-col'><h5 id='heading-presentation' role='heading' aria-level='5'>Présentations <a class='fr-link fr-icon-arrow-up-fill fr-link--icon-right lien-retour-hautdepage' aria-label='Redirection vers le haut de page' aria-describedby='tooltip-heading-presentation-page-top' href='#top'></a></h5><span id='tooltip-heading-presentation-page-top' class='fr-tooltip fr-placement' role='tooltip' aria-hidden='true'>Redirection vers le haut de page</span><p>Pas de présentation à afficher</p></div></div>
+                
+                
+                                  <div><div class='fr-col'><h5 id='heading-document-bon-usage-medicament'>Service médical rendu (<a href='/glossaire#SMR' aria-label='Cliquez ici pour accéder au glossaire sur le SMR' aria-describedby='tooltip-smr'>SMR</a>) <a class='fr-link fr-icon-arrow-up-fill fr-link--icon-right lien-retour-hautdepage' aria-label='Redirection vers le haut de page' aria-describedby='tooltip-smr-page-top' href='#top'></a></h5><span id='tooltip-smr' class='fr-tooltip fr-placement' role='tooltip' aria-hidden='true'>Cliquez ici pour accéder au glossaire sur le SMR</span><span id='tooltip-smr-page-top' class='fr-tooltip fr-placement' role='tooltip' aria-hidden='true'>Redirection vers le haut de page</span><div'><div class='fr-col'>Ce médicament étant un générique, le SMR n'a pas été évalué par la commission de la transparence (CT), il est possible de se référer à la /aux spécialité(s) de référence du groupe générique auquel appartient ce médicament <a href='#heading-groupe-generique' arial-label='cliquez ici pour aller à la rubrique des groupes génériques'>(cliquez ici pour aller à la rubrique des groupes génériques)</a></p></div></div>
+                
+                                  <div><div class='fr-col'><h5 id='heading-document-asmr' >Amélioration du service médical rendu (<a href='/glossaire#asmr' aria-label='Cliquez ici pour accéder au glossaire sur l\'ASMR' aria-describedby='tooltip-asmr'>ASMR</a>) <a class='fr-link fr-icon-arrow-up-fill fr-link--icon-right lien-retour-hautdepage' aria-label='Redirection vers le haut de page' aria-describedby='tooltip-asmr-page-top-2' href='#top'></a><span id='tooltip-asmr' class='fr-tooltip fr-placement' role='tooltip' aria-hidden='true'>Cliquez ici pour accéder au glossaire sur l'ASMR</span><span id='tooltip-asmr-page-top-2' class='fr-tooltip fr-placement' role='tooltip' aria-hidden='true'>Redirection vers le haut de page</span></h5><div class='fr-editor'><div><div class='fr-col'><p>Ce médicament étant un générique, l'ASMR n'a pas été évalué par la commission de la transparence (CT), il est possible de se référer à la /aux spécialité(s) de référence du groupe générique auquel appartient ce médicament <a href='#heading-groupe-generique' arial-label='cliquez ici pour aller à la rubrique des groupes génériques'>(cliquez ici pour aller à la rubrique des groupes génériques)</a></p></div></div></div></div></div>
+                
+                                  <div class='fr-grid-row'><div class='fr-col'><h5 id='heading-document-other-information'>Autres informations <a class='fr-link fr-icon-arrow-up-fill fr-link--icon-right lien-retour-hautdepage' aria-label='Redirection vers le haut de page' aria-describedby='tooltip-autres-infos-top' href='#top'></a><span id='tooltip-autres-infos-top' class='fr-tooltip fr-placement' role='tooltip' aria-hidden='true'>Redirection vers le haut de page</span></h5><div class="fr-grid-row"><div class="fr-col"><div id="autreInfo" style = "display:block"><ul class="autresInfosListe"><li>Titulaire de l'autorisation : ALMUS France</li><li>Conditions de prescription et de délivrance : Aucune</li><li>Statut de l'autorisation : Valide</li><li>Type de procédure : &nbsp;Procédure décentralisée</li><li>Code CIS : &nbsp;6 710 516 1</li></ul></div></div></div><div class="fr-grid-row"><div class="fr-col"> </div></div></div></div>
+                              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+                </div>
+              
+              
+                              <div id="tabpanel-rcp-panel" class="fr-tabs__panel" role="tabpanel" aria-labelledby="tabpanel-rcp"
+                     tabindex="0">
+                  <div class="fr-container">
+  <div class="fr-grid-row">
+    <div class="fr-col-12 fr-col-md-4">
+      <nav class="fr-sidemenu  fr-sidemenu--sticky-full-height" aria-labelledby="fr-sidemenu-title">
+        <div class="fr-sidemenu__inner">
+          <button
+            role="button"
+            class="fr-sidemenu__btn"
+            aria-controls="fr-sidemenu-wrapper"
+            aria-expanded="false"
+            aria-label="Menu principal : RCP"
+          >
+             Sommaire du résumé des caractéristiques du produit
+          </button>
+          <div class="fr-collapse" id="fr-sidemenu-wrapper">
+            <ul class="fr-sidemenu__list">
+                                                                                <li class="fr-sidemenu__item">
+                    <a class="fr-sidemenu__link" href="#1._DENOMINATION_DU_MEDICAMENT"
+                       aria-label="1. DENOMINATION DU MEDICAMENT (Lien de redirection)">
+                      1. DENOMINATION DU MEDICAMENT
+                    </a>
+                                      </li>
+                                                    <li class="fr-sidemenu__item">
+                    <a class="fr-sidemenu__link" href="#2._COMPOSITION_QUALITATIVE_ET_QUANTITATIVE"
+                       aria-label="2. COMPOSITION QUALITATIVE ET QUANTITATIVE (Lien de redirection)">
+                      2. COMPOSITION QUALITATIVE ET QUANTITATIVE
+                    </a>
+                                      </li>
+                                                    <li class="fr-sidemenu__item">
+                    <a class="fr-sidemenu__link" href="#3._FORME_PHARMACEUTIQUE"
+                       aria-label="3. FORME PHARMACEUTIQUE (Lien de redirection)">
+                      3. FORME PHARMACEUTIQUE
+                    </a>
+                                      </li>
+                                                    <li class="fr-sidemenu__item">
+                    <a class="fr-sidemenu__link" href="#4._DONNEES_CLINIQUES"
+                       aria-label="4. DONNEES CLINIQUES (Lien de redirection)">
+                      4. DONNEES CLINIQUES
+                    </a>
+                                          <ul class="fr-sidemenu__list">
+                                                                            <li class="fr-sidemenu__item">
+                            <a class="fr-sidemenu__link" href="#4.1._Indications_thérapeutiques"
+                               aria-label="4.1. Indications thérapeutiques (Lien de redirection)">
+                              4.1. Indications thérapeutiques
+                            </a>
+                          </li>
+                                                                            <li class="fr-sidemenu__item">
+                            <a class="fr-sidemenu__link" href="#4.2._Posologie_et_mode_d_administration"
+                               aria-label="4.2. Posologie et mode d&#039;administration (Lien de redirection)">
+                              4.2. Posologie et mode d&#039;administration
+                            </a>
+                          </li>
+                                                                            <li class="fr-sidemenu__item">
+                            <a class="fr-sidemenu__link" href="#4.3._Contre-indications"
+                               aria-label="4.3. Contre-indications (Lien de redirection)">
+                              4.3. Contre-indications
+                            </a>
+                          </li>
+                                                                            <li class="fr-sidemenu__item">
+                            <a class="fr-sidemenu__link" href="#4.4._Mises_en_garde_spéciales_et_précautions_d_emploi"
+                               aria-label="4.4. Mises en garde spéciales et précautions d&#039;emploi (Lien de redirection)">
+                              4.4. Mises en garde spéciales et précautions d&#039;emploi
+                            </a>
+                          </li>
+                                                                            <li class="fr-sidemenu__item">
+                            <a class="fr-sidemenu__link" href="#4.5._Interactions_avec_d_autres_médicaments_et_autres_formes_d_interactions"
+                               aria-label="4.5. Interactions avec d&#039;autres médicaments et autres formes d&#039;interactions (Lien de redirection)">
+                              4.5. Interactions avec d&#039;autres médicaments et autres formes d&#039;interactions
+                            </a>
+                          </li>
+                                                                            <li class="fr-sidemenu__item">
+                            <a class="fr-sidemenu__link" href="#4.6._Fertilité,_grossesse_et_allaitement"
+                               aria-label="4.6. Fertilité, grossesse et allaitement (Lien de redirection)">
+                              4.6. Fertilité, grossesse et allaitement
+                            </a>
+                          </li>
+                                                                            <li class="fr-sidemenu__item">
+                            <a class="fr-sidemenu__link" href="#4.7._Effets_sur_l_aptitude_à_conduire_des_véhicules_et_à_utiliser_des_machines"
+                               aria-label="4.7. Effets sur l&#039;aptitude à conduire des véhicules et à utiliser des machines (Lien de redirection)">
+                              4.7. Effets sur l&#039;aptitude à conduire des véhicules et à utiliser des machines
+                            </a>
+                          </li>
+                                                                            <li class="fr-sidemenu__item">
+                            <a class="fr-sidemenu__link" href="#4.8._Effets_indésirables"
+                               aria-label="4.8. Effets indésirables (Lien de redirection)">
+                              4.8. Effets indésirables
+                            </a>
+                          </li>
+                                                                            <li class="fr-sidemenu__item">
+                            <a class="fr-sidemenu__link" href="#4.9._Surdosage"
+                               aria-label="4.9. Surdosage (Lien de redirection)">
+                              4.9. Surdosage
+                            </a>
+                          </li>
+                                              </ul>
+                                      </li>
+                                                    <li class="fr-sidemenu__item">
+                    <a class="fr-sidemenu__link" href="#5._PROPRIETES_PHARMACOLOGIQUES"
+                       aria-label="5. PROPRIETES PHARMACOLOGIQUES (Lien de redirection)">
+                      5. PROPRIETES PHARMACOLOGIQUES
+                    </a>
+                                          <ul class="fr-sidemenu__list">
+                                                                            <li class="fr-sidemenu__item">
+                            <a class="fr-sidemenu__link" href="#5.1._Propriétés_pharmacodynamiques"
+                               aria-label="5.1. Propriétés pharmacodynamiques (Lien de redirection)">
+                              5.1. Propriétés pharmacodynamiques
+                            </a>
+                          </li>
+                                                                            <li class="fr-sidemenu__item">
+                            <a class="fr-sidemenu__link" href="#5.2._Propriétés_pharmacocinétiques"
+                               aria-label="5.2. Propriétés pharmacocinétiques (Lien de redirection)">
+                              5.2. Propriétés pharmacocinétiques
+                            </a>
+                          </li>
+                                                                            <li class="fr-sidemenu__item">
+                            <a class="fr-sidemenu__link" href="#5.3._Données_de_sécurité_préclinique"
+                               aria-label="5.3. Données de sécurité préclinique (Lien de redirection)">
+                              5.3. Données de sécurité préclinique
+                            </a>
+                          </li>
+                                              </ul>
+                                      </li>
+                                                    <li class="fr-sidemenu__item">
+                    <a class="fr-sidemenu__link" href="#6._DONNEES_PHARMACEUTIQUES"
+                       aria-label="6. DONNEES PHARMACEUTIQUES (Lien de redirection)">
+                      6. DONNEES PHARMACEUTIQUES
+                    </a>
+                                          <ul class="fr-sidemenu__list">
+                                                                            <li class="fr-sidemenu__item">
+                            <a class="fr-sidemenu__link" href="#6.1._Liste_des_excipients"
+                               aria-label="6.1. Liste des excipients (Lien de redirection)">
+                              6.1. Liste des excipients
+                            </a>
+                          </li>
+                                                                            <li class="fr-sidemenu__item">
+                            <a class="fr-sidemenu__link" href="#6.2._Incompatibilités"
+                               aria-label="6.2. Incompatibilités (Lien de redirection)">
+                              6.2. Incompatibilités
+                            </a>
+                          </li>
+                                                                            <li class="fr-sidemenu__item">
+                            <a class="fr-sidemenu__link" href="#6.3._Durée_de_conservation"
+                               aria-label="6.3. Durée de conservation (Lien de redirection)">
+                              6.3. Durée de conservation
+                            </a>
+                          </li>
+                                                                            <li class="fr-sidemenu__item">
+                            <a class="fr-sidemenu__link" href="#6.4._Précautions_particulières_de_conservation"
+                               aria-label="6.4. Précautions particulières de conservation (Lien de redirection)">
+                              6.4. Précautions particulières de conservation
+                            </a>
+                          </li>
+                                                                            <li class="fr-sidemenu__item">
+                            <a class="fr-sidemenu__link" href="#6.5._Nature_et_contenu_de_l_emballage_extérieur_"
+                               aria-label="6.5. Nature et contenu de l&#039;emballage extérieur  (Lien de redirection)">
+                              6.5. Nature et contenu de l&#039;emballage extérieur 
+                            </a>
+                          </li>
+                                                                            <li class="fr-sidemenu__item">
+                            <a class="fr-sidemenu__link" href="#6.6._Précautions_particulières_d_élimination_et_de_manipulation"
+                               aria-label="6.6. Précautions particulières d’élimination et de manipulation (Lien de redirection)">
+                              6.6. Précautions particulières d’élimination et de manipulation
+                            </a>
+                          </li>
+                                              </ul>
+                                      </li>
+                                                    <li class="fr-sidemenu__item">
+                    <a class="fr-sidemenu__link" href="#7._TITULAIRE_DE_L’AUTORISATION_DE_MISE_SUR_LE_MARCHE"
+                       aria-label="7. TITULAIRE DE L’AUTORISATION DE MISE SUR LE MARCHE (Lien de redirection)">
+                      7. TITULAIRE DE L’AUTORISATION DE MISE SUR LE MARCHE
+                    </a>
+                                      </li>
+                                                    <li class="fr-sidemenu__item">
+                    <a class="fr-sidemenu__link" href="#8._NUMERO(S)_D’AUTORISATION_DE_MISE_SUR_LE_MARCHE"
+                       aria-label="8. NUMERO(S) D’AUTORISATION DE MISE SUR LE MARCHE (Lien de redirection)">
+                      8. NUMERO(S) D’AUTORISATION DE MISE SUR LE MARCHE
+                    </a>
+                                      </li>
+                                                    <li class="fr-sidemenu__item">
+                    <a class="fr-sidemenu__link" href="#9._DATE_DE_PREMIERE_AUTORISATION/DE_RENOUVELLEMENT_DE_L’AUTORISATION"
+                       aria-label="9. DATE DE PREMIERE AUTORISATION/DE RENOUVELLEMENT DE L’AUTORISATION (Lien de redirection)">
+                      9. DATE DE PREMIERE AUTORISATION/DE RENOUVELLEMENT DE L’AUTORISATION
+                    </a>
+                                      </li>
+                                                    <li class="fr-sidemenu__item">
+                    <a class="fr-sidemenu__link" href="#10._DATE_DE_MISE_A_JOUR_DU_TEXTE"
+                       aria-label="10. DATE DE MISE A JOUR DU TEXTE (Lien de redirection)">
+                      10. DATE DE MISE A JOUR DU TEXTE
+                    </a>
+                                      </li>
+                                                    <li class="fr-sidemenu__item">
+                    <a class="fr-sidemenu__link" href="#11._DOSIMETRIE"
+                       aria-label="11. DOSIMETRIE (Lien de redirection)">
+                      11. DOSIMETRIE
+                    </a>
+                                      </li>
+                                                    <li class="fr-sidemenu__item">
+                    <a class="fr-sidemenu__link" href="#12._INSTRUCTIONS_POUR_LA_PREPARATION_DES_RADIOPHARMACEUTIQUES"
+                       aria-label="12. INSTRUCTIONS POUR LA PREPARATION DES RADIOPHARMACEUTIQUES (Lien de redirection)">
+                      12. INSTRUCTIONS POUR LA PREPARATION DES RADIOPHARMACEUTIQUES
+                    </a>
+                                      </li>
+                                                          </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+          <div id="contenu" class="fr-col-12 fr-col-md-8 fr-py-12v">
+        <div class="fr-grid-row--right fr-no-print print-div">
+          <button aria-label="Imprimer fiche info du médicament : TRAMADOL ALMUS 50 mg, gélule - Médicament  - BDPM" class="fr-link print-button">
+            <span aria-hidden="true" class="fr-icon-printer-fill"></span>
+            <span class="sr-only" rel="noopener noreferrer">Imprimer</span>
+          </button>
+        </div>
+                <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//FR" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<!-- template_9 -->
+<HTML>
+  <HEAD>
+    
+    <META name="organization" content="ANSM : Agence Nationale de Sécurité du Médicament et des Produit de santé">
+    <META name="description" content="Résumé des Caractéristiques du Produit">
+    <META name="keywords" content="TRAMADOL ALMUS 50 mg, gélule, Médicament, Spécialité pharmaceutique, RCP, Résumé des Caractéristiques du Produit, Dénomination, Forme pharmaceutique, Indications, Contre-indications, Effets secondaires">
+    <TITLE>Résumé des Caractéristiques du Produit</TITLE>
+    
+  </HEAD>
+  <BODY>
+
+<p class="DateNotif">ANSM - Mis à jour le : 19/03/2026</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDenomination"><span id='1._DENOMINATION_DU_MEDICAMENT'>1. DENOMINATION DU MEDICAMENT</span></a><a class="fr-link fr-icon-arrow-up-fill fr-link--icon-right lien-retour-hautdepage" aria-label="Redirection vers le haut de page" aria-describedby="tooltip-rpc-page-top-RcpDenomination" href="#top"></a></p><span id='tooltip-rpc-page-top-RcpDenomination' class='fr-tooltip fr-placement' role='tooltip' aria-hidden='true'>Redirection vers le haut de page</span>
+<p class=AmmCorpsTexteGras><a name="_Toc142278913">TRAMADOL ALMUS 50 mg, gélule</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpCompoQualiQuanti"><span id='2._COMPOSITION_QUALITATIVE_ET_QUANTITATIVE'>2. COMPOSITION QUALITATIVE ET QUANTITATIVE</span></a><a class="fr-link fr-icon-arrow-up-fill fr-link--icon-right lien-retour-hautdepage" aria-label="Redirection vers le haut de page" aria-describedby="tooltip-rpc-page-top-RcpCompoQualiQuanti" href="#top"></a></p><span id='tooltip-rpc-page-top-RcpCompoQualiQuanti' class='fr-tooltip fr-placement' role='tooltip' aria-hidden='true'>Redirection vers le haut de page</span>
+<p class=AmmComposition>Chlorhydrate de tramadol ...................................................................................................... 50 mg</p>
+<p class=AmmCorpsTexte align=center style='text-align:center'>Pour une gélule.</p>
+<p class=AmmCorpsTexte>Pour la liste complète des excipients, voir rubrique 6.1.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpFormePharm"><span id='3._FORME_PHARMACEUTIQUE'>3. FORME PHARMACEUTIQUE</span></a><a class="fr-link fr-icon-arrow-up-fill fr-link--icon-right lien-retour-hautdepage" aria-label="Redirection vers le haut de page" aria-describedby="tooltip-rpc-page-top-RcpFormePharm" href="#top"></a></p><span id='tooltip-rpc-page-top-RcpFormePharm' class='fr-tooltip fr-placement' role='tooltip' aria-hidden='true'>Redirection vers le haut de page</span>
+<p class=AmmCorpsTexte><a name="_Toc142278915">Gélule.</a></p>
+<p class=AmmCorpsTexte>Poudre de couleur blanc à blanc cassé, contenue dans des gélules de gélatine, blanches, opaques de taille ’4’ (14,4 mm x 5,33 mm).</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesCliniques"><span id='4._DONNEES_CLINIQUES'>4. DONNEES CLINIQUES</span></a><a class="fr-link fr-icon-arrow-up-fill fr-link--icon-right lien-retour-hautdepage" aria-label="Redirection vers le haut de page" aria-describedby="tooltip-rpc-page-top-RcpDonneesCliniques" href="#top"></a></p><span id='tooltip-rpc-page-top-RcpDonneesCliniques' class='fr-tooltip fr-placement' role='tooltip' aria-hidden='true'>Redirection vers le haut de page</span>
+<p class="AmmAnnexeTitre2"><a name="RcpIndicTherap"><span id='4.1._Indications_thérapeutiques'>4.1. Indications thérapeutiques</span></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278917">Traitement des douleurs modérées à intenses chez les adultes et les adolescents âgés de 12 ans et plus.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPosoAdmin"><span id='4.2._Posologie_et_mode_d_administration'>4.2. Posologie et mode d'administration</span></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278918">Posologie</a></p>
+<p class=AmmCorpsTexte>La dose devra être adaptée à l’intensité de la douleur et à la sensibilité individuelle de chaque patient. La posologie minimale efficace analgésique doit être généralement utilisée. A l’exception des circonstances cliniques particulières, la dose totale journalière ne doit pas excéder 400 mg de substance active.</p>
+<p class=AmmCorpsTexte>Sauf indication contraire, ce médicament doit être administré comme suit :</p>
+<p class=AmmCorpsTexte><i><u>Adultes </u></i></p>
+<p class=AmmCorpsTexte>Normalement, la dose initiale de chlorhydrate de tramadol est de 50 à 100 mg (1 ou 2 gélules) suivie de 50 ou 100 mg toutes les 4 à 6 heures, sans dépasser une dose quotidienne de 400 mg (8 gélules) (voir rubrique 5.1). </p>
+<p class=AmmCorpsTexte><i><u>Population pédiatrique</u></i></p>
+<p class=AmmCorpsTexte>En raison de la quantité de principe actif par gélule, le médicament ne convient pas aux enfants (de moins de 12 ans). Il existe d'autres présentations disponibles dans le commerce adaptées à l'administration chez les enfants. </p>
+<p class=AmmCorpsTexte>Les adolescents de plus de 12 ans peuvent suivre les recommandations pour les adultes.</p>
+<p class=AmmCorpsTexte>Pour les enfants de plus de 3 ans, la dose recommandée est de 1 à 2 mg de chlorhydrate de tramadol par kg de poids corporel. Les doses peuvent être répétées, si nécessaire, 3 à 4 fois par jour (à des intervalles de 6 à 8 heures). Les doses journalières ne doivent pas dépasser 8 mg de chlorhydrate de tramadol par kg de poids corporel ou 400 mg de chlorhydrate de tramadol (la plus faible des deux valeurs) (voir rubrique 5.1). </p>
+<p class=AmmCorpsTexte>L'utilisation du tramadol n'est pas recommandée chez les patients qui sont des métaboliseurs ultra-rapides ou qui présentent des problèmes respiratoires (y compris une apnée obstructive du sommeil) et qui doivent subir une adénoïdectomie/amygdalectomie, en raison du risque potentiel de dépression respiratoire mettant en jeu le pronostic vital (voir rubriques 4.4 et 4.8). </p>
+<p class=AmmCorpsTexte>Des cas de surdosage accidentel et des cas de métaboliseurs ultra-rapides chez les enfants ont été rapportés (voir rubriques 4.4 « Enfants et métaboliseurs ultra-rapides du CYP2D6 » et 4.9 « Surdosage »).</p>
+<p class=AmmAnnexeTitre4>Patients âgés</p>
+<p class=AmmCorpsTexte>Une adaptation posologique n'est habituellement pas nécessaire chez les patients âgés de moins de 75 ans, en l'absence d'insuffisance hépatique ou rénale cliniquement avérée. Chez les patients âgés de plus de 75 ans, l’élimination du produit peut être retardée. C’est pourquoi l’intervalle posologique devra être allongé, si nécessaire, en fonction des besoins du patient.</p>
+<p class=AmmAnnexeTitre4>Patients ayant une insuffisance rénale/dialyse et une insuffisance hépatique</p>
+<p class=AmmCorpsTexte>L’élimination du tramadol est lente chez les insuffisants rénaux et/ou hépatiques. Chez ces patients, une augmentation de l’intervalle entre les prises doit être envisagée en fonction des besoins du patient.</p>
+<p class=AmmAnnexeTitre3>Mode d’administration</p>
+<p class=AmmCorpsTexte>Voie orale.</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Les gélules doivent être prises entières, sans être divisées ou mâchées, avec une quantité suffisante de liquide, et avec ou sans nourriture.</span></p>
+<p class=AmmAnnexeTitre3>Objectifs du traitement et de son arrêt</p>
+<p class=AmmCorpsTexte>Avant l’instauration du traitement avec TRAMADOL ALMUS, une stratégie thérapeutique comprenant la durée et les objectifs du traitement, ainsi qu’un plan pour la fin du traitement, doit être convenue avec le patient, conformément aux recommandations relatives à la prise en charge de la douleur. Pendant le traitement, des contacts fréquents doivent avoir lieu entre le médecin et le patient afin d’évaluer la nécessité de poursuivre le traitement, d’envisager l’arrêt ou d’ajuster la posologie du traitement si nécessaire. Lorsqu’un patient n’a plus besoin du traitement par tramadol, il est conseillé de réduire progressivement la dose pour éviter les symptômes de sevrage. En l’absence de contrôle adéquat de la douleur, la possibilité d’une hyperalgie, d’une tolérance et d’une progression de la maladie sous-jacente doit être envisagée (voir rubrique 4.4).</p>
+<p class=AmmAnnexeTitre3><span lang=FR-BE>Durée de traitement</span></p>
+<p class=AmmCorpsTexte><span style='color:black;background:white'>Ce médicament ne doit pas être administré pendant une durée supérieure à celle absolument nécessaire. Si un traitement au long cours de la douleur par le tramadol est nécessaire, compte tenu de la nature et de la sévérité de la maladie, il convient de procéder à une surveillance soigneuse et régulière (en intercalant si nécessaire des pauses thérapeutiques) en vue de vérifier si, et dans quelle mesure, la poursuite du traitement est nécessaire.</span></p>
+<p class="AmmAnnexeTitre2"><a name="RcpContreindications"><span id='4.3._Contre-indications'>4.3. Contre-indications</span></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278919">TRAMADOL ALMUS est contre-indiqué : </a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>en cas d’hypersensibilité à la substance active ou à l’un des excipients mentionnés à la rubrique 6.1,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>en cas d’intoxications aiguës par l’alcool, les hypnotiques, les analgésiques, les opioïdes ou d’autres médicaments psychotropes,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>chez les patients qui sont traités simultanément ou qui ont été traités dans les 14 jours précédents par les inhibiteurs de la monoamine oxydase (MAO) (voir rubrique 4.5),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>en cas d’épilepsie non contrôlée par un traitement,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>dans le traitement de sevrage des toxicomanes.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpMisesEnGarde"><span id='4.4._Mises_en_garde_spéciales_et_précautions_d_emploi'>4.4. Mises en garde spéciales et précautions d'emploi</span></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278920">TRAMADOL ALMUS doit être utilisé avec prudence chez les patients dépendants aux opioïdes, chez les patients présentant un traumatisme crânien, un état de choc, une altération de la conscience d’origine incertaine, des troubles centraux ou périphériques de la fonction respiratoire ou une augmentation de la pression intracrânienne.</a></p>
+<p class=AmmCorpsTexte>Chez les patients dépendants aux opioïdes le traitement devra être pris avec précaution.</p>
+<p class=AmmCorpsTexte><span style='color:#212121;background:white'>L'utilisation concomitante de TRAMADOL ALMUS et de médicaments sédatifs tels que les benzodiazépines ou les médicaments apparentés peut entraîner une sédation, une dépression respiratoire, le coma et la mort. En raison de ces risques, la prescription concomitante de ces médicaments sédatifs doit être réservée aux patients pour lesquels d’autres options de traitement ne sont pas possibles. Si une décision est prise de prescrire TRAMADOL ALMUS en association avec des médicaments sédatifs, la dose efficace la plus faible doit être utilisée et la durée du traitement doit être aussi courte que possible.</span></p>
+<p class=AmmCorpsTexte><span style='color:#212121;background:white'>Les patients doivent être suivis de près pour détecter tout signe ou symptôme de dépression respiratoire et de sédation. À cet égard, il est fortement recommandé d’informer les patients et leurs soignants de ces symptômes (voir rubrique 4.5).</span></p>
+<p class=AmmCorpsTexte>Des convulsions ont été rapportées chez des patients recevant du tramadol aux doses recommandées. Le risque de convulsions est accru si les doses de chlorhydrate de tramadol dépassent la limite supérieure de la dose quotidienne recommandée (400 mg). Le tramadol peut en outre accroître le risque de convulsions chez les patients prenant d’autres produits qui abaissent le seuil épileptogène (voir rubrique 4.5). Les patients épileptiques ou les patients susceptibles de présenter des convulsions ne devront être traités par tramadol qu’en cas de nécessité absolue.</p>
+<p class=AmmCorpsTexte>Une attention particulière devra être portée lors du traitement des patients souffrant d’insuffisance respiratoire ou traités par dépresseurs centraux (voir rubrique 4.5), ou si la dose recommandée est largement dépassée (voir rubrique 4.9) : un risque de dépression respiratoire ne peut être exclu dans ces situations.</p>
+<p class=AmmCorpsTexte><u>Troubles respiratoires liés au sommeil </u></p>
+<p class=AmmCorpsTexte>Les opioïdes peuvent provoquer des troubles respiratoires liés au sommeil, notamment l’apnée centrale du sommeil (ACS) et l’hypoxémie liée au sommeil. Le risque d’ACS augmente en fonction de la dose d’opioïdes utilisée. Chez les patients présentant une ACS, une diminution de la dose totale d’opioïdes doit être envisagée. </p>
+<p class=AmmCorpsTexte><u>Syndrome sérotoninergique </u></p>
+<p class=AmmCorpsTexte>Le syndrome sérotoninergique, une affection potentiellement mortelle, a été rapporté chez des patients traités par le tramadol en association avec d’autres agents sérotoninergiques ou par le tramadol seul (voir rubriques 4.5, 4.8 et 4.9).</p>
+<p class=AmmCorpsTexte>Si un traitement concomitant avec d’autres agents sérotoninergiques est justifié sur le plan clinique, il est conseillé d’observer attentivement le patient, tout particulièrement pendant l’instauration du traitement et les augmentations de dose. </p>
+<p class=AmmCorpsTexte>Les symptômes du syndrome sérotoninergique peuvent comprendre des modifications de l’état mental, une instabilité autonome, des anomalies neuromusculaires et/ou des symptômes gastro-intestinaux. </p>
+<p class=AmmCorpsTexte>En cas de suspicion de syndrome sérotoninergique, une réduction de dose ou un arrêt du traitement devra être envisagé(e) en fonction de la gravité des symptômes. Le retrait des médicaments sérotoninergiques apporte généralement une amélioration rapide.</p>
+<p class=AmmCorpsTexte><u>Tolérance et trouble de l’usage d’opioïdes (abus et pharmacodépendance)</u></p>
+<p class=AmmCorpsTexte>L’administration répétée d’opioïdes tels que TRAMADOL ALMUS peut entraîner une accoutumance, une dépendance physique et psychologique et un trouble de l’usage d’opioïdes (TUO). L’utilisation répétée de TRAMADOL ALMUS peut induire un trouble de l’usage d’opioïdes (TUO). Plus la dose est élevée et plus la durée du traitement par opioïdes est prolongée, plus le risque de développer un TUO sera accru. L’abus ou le mésusage intentionnel de TRAMADOL ALMUS peuvent entraîner un surdosage et/ou le décès. </p>
+<p class=AmmCorpsTexte>Le risque de développer un TUO est accru chez les patients présentant des antécédents personnels ou familiaux (parents ou frères et sœurs) de troubles liés à la consommation de substances (y compris l’alcoolisme), chez les fumeurs actifs ou chez les patients ayant des antécédents personnels de problèmes de santé mentale (par ex. dépression majeure, anxiété et trouble de la personnalité).</p>
+<p class=AmmCorpsTexte>Avant l’instauration du traitement par TRAMADOL ALMUS et pendant toute la durée du traitement, les objectifs thérapeutiques et un plan d’arrêt du traitement doivent être convenus avec le patient (voir rubrique 4.2). Avant et pendant le traitement, le patient doit également être informé des risques et des signes du TUO. Si ces signes apparaissent, il est conseillé aux patients de contacter leur médecin.</p>
+<p class=AmmCorpsTexte>Les patients devront être surveillés pour détecter les signes de consommation excessive de médicament (par ex. des demandes de renouvellement trop précoces). Cela inclut l'examen des opioïdes et des médicaments psychoactifs concomitants (comme les benzodiazépines). Pour les patients présentant des signes et symptômes de TUO, il convient d’envisager une consultation avec un spécialiste en toxicomanie.</p>
+<p class=AmmCorpsTexte>Lorsqu'un patient n'a plus besoin de traitement par tramadol, il peut être conseillé de diminuer progressivement la dose pour prévenir les symptômes de sevrage. </p>
+<p class=AmmCorpsTexte>Le tramadol ne convient pas comme substitut chez les patients dépendants aux opioïdes. Bien qu'il soit un agoniste des opioïdes, le tramadol ne peut pas supprimer les symptômes de sevrage de la morphine.</p>
+<p class=AmmCorpsTexte><u>Métabolisme par le CYP2D6 </u></p>
+<p class=AmmCorpsTexte>Le tramadol est métabolisé par l’intermédiaire d’une enzyme hépatique, le CYP2D6. En cas de déficit ou d’absence totale de cette enzyme chez le patient, l’effet analgésique attendu pourra ne pas être obtenu. Il est estimé que jusqu’à 7 % de la population caucasienne pourrait présenter ce déficit. Toutefois, si le patient est un métaboliseur ultra-rapide, il existe un risque, même à dose recommandée, de manifestation d’effets indésirables liés à la toxicité des opiacés. </p>
+<p class=AmmCorpsTexte>Les symptômes généraux de toxicité des opiacés incluent une confusion mentale, une somnolence, une respiration superficielle, des pupilles contractées, des nausées, des vomissements, une constipation et une perte d’appétit. Dans les cas graves, les patients peuvent présenter les symptômes d’une défaillance circulatoire et respiratoire pouvant engager le pronostic vital et conduire à une issue fatale dans de très rares cas. </p>
+<p class=AmmCorpsTexte>Les prévalences estimées de métaboliseurs ultra-rapides dans différentes populations sont résumées ci-dessous:</p>
+<p class=AmmCorpsTexteGras>Population % de prévalence</p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Africain/Éthiopien  29 %</p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Afro-américain  de 3,4 % à 6,5 %</p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Asiatique  de 1,2 % à 2 %</p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Caucasien  de 3,6 % à 6,5 %</p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Grec  6%</p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Hongrois  1,9 %</p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Européen du Nord de 1 % à 2 %</p>
+<p class=AmmCorpsTexte><u>Utilisation postopératoire chez les enfants </u></p>
+<p class=AmmCorpsTexte>La littérature rapporte des cas de tramadol administré à des enfants en postopératoire après une amygdalectomie et/ou une adénoïdectomie dans le cadre du traitement de l’apnée obstructive du sommeil, ayant mené à des événements indésirables rares mais pouvant engager le pronostic vital. L’administration de tramadol à des enfants pour le soulagement de douleurs postopératoires doit être sujette à la plus grande prudence et doit s’accompagner d’une étroite surveillance des symptômes en lien avec la toxicité des opiacés, notamment la dépression respiratoire. </p>
+<p class=AmmCorpsTexte><u>Enfants présentant une fonction respiratoire altérée </u></p>
+<p class=AmmCorpsTexte>L’utilisation du tramadol n’est pas recommandée chez les enfants présentant une fonction respiratoire altérée, notamment en cas de déficit neuromusculaire, d’affections cardiaques ou respiratoires sévères, d’infections des voies aériennes supérieures ou des poumons, de polytraumatismes ou d’interventions chirurgicales lourdes. Ces facteurs sont susceptibles d’aggraver les symptômes de toxicité des opiacés.</p>
+<p class=AmmCorpsTexte>Le tramadol doit être utilisé avec prudence chez les patients atteints de porphyrie aiguë car des tests <i>in vitro</i> ont montré un risque d'accumulation de porphyrine hépatique, ce qui pourrait déclencher une crise porphyrique.</p>
+<p class=AmmCorpsTexte><u>Insuffisance surrénalienne </u></p>
+<p class=AmmCorpsTexte>Les antalgiques opioïdes peuvent occasionnellement provoquer une insuffisance surrénalienne réversible nécessitant une surveillance et un traitement de substitution par glucocorticoïde. Les symptômes d'insuffisance surrénale aiguë ou chronique peuvent inclure par ex. douleur abdominale sévère, nausées et vomissements, hypotension artérielle, fatigue extrême, diminution de l’appétit et perte de poids.</p>
+<p class=AmmCorpsTexte><u>Enfants et métaboliseurs ultra-rapides du CYP2D6</u></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Des cas de métaboliseurs ultra-rapides ont été rapportés, en particulier chez les enfants.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les parents ou les soignants doivent être informés de la nécessité de surveiller étroitement l'enfant, en particulier lors de la première administration, et de contacter un médecin ou les services d'urgence si des signes inhabituels sont observés, notamment une altération de la conscience, un myosis, des vomissements, des convulsions ou une dépression respiratoire (voir rubrique 4.9).</p>
+<p class=AmmCorpsTexte><u><span style='text-decoration:none'> </span></u></p>
+<p class=AmmCorpsTexte>Ce médicament contient moins de 1 mmol (23 mg) de sodium par gélule, c’est-à-dire qu’il est essentiellement « sans sodium ».</p>
+<p class="AmmAnnexeTitre2"><a name="RcpInteractionsMed"><span id='4.5._Interactions_avec_d_autres_médicaments_et_autres_formes_d_interactions'>4.5. Interactions avec d'autres médicaments et autres formes d'interactions</span></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278928"></a><a name="_Toc142278926"></a><a name="_Toc142278925">TRAMADOL ALMUS est contre-indiqué avec les IMAO (voir rubrique 4.3).</a></p>
+<p class=AmmCorpsTexte>Chez les patients traités par inhibiteurs de la MAO dans les 14 jours précédant l'utilisation de l’opioïde pethidine, des interactions potentiellement mortelles sur le système nerveux central, les fonctions respiratoires et cardiovasculaires ont été observées. Les mêmes interactions avec les inhibiteurs de la MAO ne peuvent être exclues pendant le traitement par le tramadol. </p>
+<p class=AmmCorpsTexte>L'administration concomitante de tramadol avec d'autres médicaments dépresseurs centraux, y compris l'alcool, peut potentialiser les effets sur le système nerveux central (voir rubrique 4.8).</p>
+<p class=AmmCorpsTexte>L'utilisation concomitante de TRAMADOL ALMUS avec des gabapentinoïdes (gabapentine et prégabaline) peut entraîner une dépression respiratoire, une hypotension, une sédation profonde, un coma ou la mort. </p>
+<p class=AmmCorpsTexte><u>Médicaments sédatifs tels que les benzodiazépines ou médicaments apparentés</u> :</p>
+<p class=AmmCorpsTexte>L’utilisation concomitante d’opioïdes avec des médicaments sédatifs tels que les benzodiazépines ou des médicaments apparentés augmente le risque de sédation, de dépression respiratoire, de coma ou de décès en raison d’un effet dépresseur additif sur le système nerveux central. La dose et la durée d'utilisation concomitante doivent être limitées (voir rubrique 4.4).</p>
+<p class=AmmCorpsTexte>Les études pharmacocinétiques, réalisées à ce jour, ont montré que l'administration concomitante ou antérieure de cimétidine (inhibiteur enzymatique) est peu susceptible de provoquer des interactions cliniquement pertinentes.</p>
+<p class=AmmCorpsTexte>L'administration simultanée ou antérieure de carbamazépine (inducteur enzymatique) peut réduire les effets analgésiques et raccourcir la durée d'action du tramadol.</p>
+<p class=AmmCorpsTexte>Le tramadol peut provoquer des convulsions et augmenter le potentiel épileptogène des inhibiteurs sélectifs de la recapture de la sérotonine (ISRS), des inhibiteurs de la recapture de la sérotonine et de l'adrénaline (IRSA), des antidépresseurs tricycliques, des antipsychotiques et d'autres médicaments abaissant le seuil épileptogène (tels que le bupropion, la mirtazapine, le tétrahydrocannabinol).</p>
+<p class=AmmCorpsTexte>L'utilisation concomitante de tramadol et de médicaments sérotoninergiques, tels que les inhibiteurs sélectifs de la recapture de la sérotonine (ISRS), les inhibiteurs de la recapture de la sérotonine et de la noradrénaline (IRSAN), les inhibiteurs de la MAO (voir rubrique 4.3), les antidépresseurs tricycliques et la mirtazapine peut causer un syndrome sérotoninergique, une affection potentiellement mortelle (voir rubriques 4.4 et4.8). </p>
+<p class=AmmCorpsTexte>Des précautions doivent être prises lors de traitement concomitant du tramadol avec les dérivés de la coumarine (par exemple, la warfarine) en raison de cas signalés d’augmentation de l’INR (International Normalized Ratio)<span style='font-size:12.0pt;font-family:"Times New Roman",serif'> </span>accompagnée de saignements majeurs et d’ecchymoses chez certains patients.</p>
+<p class=AmmCorpsTexte>D'autres médicaments, connus pour inhiber le CYP3A4 tels que le kétoconazole, l'érythromycine, le ritonavir, la quinidine, la paroxétine, la fluoxétine, la sertraline, l’amitriptyline, et l’isoniazide peuvent inhiber le métabolisme du tramadol (N-déméthylation) et probablement également le métabolisme du métabolite O-déméthylé actif. L'importance clinique d'une telle interaction n'a pas fait l'objet d'études (voir rubrique 4.8).</p>
+<p class=AmmCorpsTexte>Dans un nombre limité d'études, l'application pré- ou post-opératoire de l'antagoniste antiémétique 5-HT3 ondansétron a augmenté les besoins en tramadol chez les patients présentant une douleur post-opératoire.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpFertGrossAllait"><span id='4.6._Fertilité,_grossesse_et_allaitement'>4.6. Fertilité, grossesse et allaitement</span></a></p>
+<p class=AmmAnnexeTitre3>Grossesse</p>
+<p class=AmmCorpsTexte>Les études animales utilisant le tramadol à des doses très élevées ont montré des effets sur le développement des organes, l’ossification et la mortalité néonatale. Aucun effet tératogène n’a été observé. Le tramadol traverse la barrière placentaire. </p>
+<p class=AmmCorpsTexte>On ne dispose pas de preuves suffisantes, concernant l’emploi du tramadol pendant la grossesse dans l’espèce humaine. Le tramadol ne doit donc pas être utilisé chez les femmes enceintes.</p>
+<p class=AmmCorpsTexte>Administré avant ou pendant l’accouchement, le tramadol ne modifie pas la contractilité utérine.</p>
+<p class=AmmCorpsTexte>Le tramadol peut provoquer chez les nouveau-nés des modifications de la fréquence respiratoire, qui sont généralement sans conséquences cliniques préjudiciables. Une utilisation prolongée pendant la grossesse peut entraîner un syndrome de sevrage chez le nouveau-né.</p>
+<p class=AmmAnnexeTitre3>Allaitement</p>
+<p class=AmmCorpsTexte>Environ 0,1 % de la dose de tramadol administrée à la mère est excrété dans le lait maternel. Durant la période du post-partum immédiat, une prise orale quotidienne jusqu’à 400 mg de tramadol par la mère correspond à une quantité moyenne de tramadol ingérée par le nourrisson allaité de 3 % de la dose prise par la mère ajustée au poids corporel. Ainsi, il convient soit de ne pas utiliser le tramadol pendant la lactation, soit d’interrompre l’allaitement lors d’un traitement par tramadol. L’interruption de l’allaitement n’est généralement pas nécessaire à la suite d’une prise unique de tramadol.</p>
+<p class=AmmAnnexeTitre3>Fertilité</p>
+<p class=AmmCorpsTexte>Les études après-commercialisation n’ont pas mis en évidence d’effet du tramadol sur la fertilité. Les études chez l’animal n’ont pas montré d’effet du tramadol sur la fertilité.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpConduite"><span id='4.7._Effets_sur_l_aptitude_à_conduire_des_véhicules_et_à_utiliser_des_machines'>4.7. Effets sur l'aptitude à conduire des véhicules et à utiliser des machines</span></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278929"></a><a name="_Toc142278921">Les analgésiques opioïdes peuvent diminuer la capacité mentale et/ou physique à effectuer des tâches potentiellement dangereuses (par exemple, conduire un véhicule ou utiliser des machines), en particulier au début du traitement, après une augmentation de la dose, après un changement de posologie et/ou en cas d'administration concomitante avec d'autres médicaments. Les patients doivent être avertis de ne pas conduire ou utiliser de machines s'ils ressentent une somnolence, des étourdissements ou des troubles visuels pendant la prise de TRAMADOL ALMUS, ou jusqu'à ce qu'il soit établi que la capacité à effectuer ces activités n'est pas altérée. Cela est encore plus probable en cas de prise concomitante d'alcool et d'autres médicaments psychotropes.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpEffetsIndesirables"><span id='4.8._Effets_indésirables'>4.8. Effets indésirables</span></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278922">Les effets indésirables les plus fréquemment rapportés sont des nausées et des vertiges qui sont observés chez plus de 10 % des patients.</a></p>
+<p class=AmmCorpsTexte>Les fréquences sont définies comme suit :</p>
+<p class=AmmListePuces1><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Très fréquent : &#8805; 1/10.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Fréquent : &#8805; 1/100 à < 1/10.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Peu fréquent : &#8805; 1/1 000 à < 1/100.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Rare : &#8805; 1/10 000 à < 1/1 000.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Très rare : < 1/10 000.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Fréquence indéterminée : ne peut pas être estimée à partir des données disponibles.</p>
+<p class=AmmAnnexeTitre3>Affections cardiaques</p>
+<p class=AmmCorpsTexte><i>Peu fréquent</i> : effets sur la régulation cardiovasculaire (palpitations, tachycardie). Ces effets indésirables peuvent survenir en particulier après une administration intraveineuse et chez les patients soumis à un stress physique.</p>
+<p class=AmmCorpsTexte><i>Rare :</i> bradycardie.</p>
+<p class=AmmAnnexeTitre3>Investigations</p>
+<p class=AmmCorpsTexte><i>Rare :</i> augmentation de la pression artérielle.</p>
+<p class=AmmAnnexeTitre3>Affections vasculaires</p>
+<p class=AmmCorpsTexte><i>Peu fréquent</i> : effets sur la régulation cardiovasculaire (hypotension artérielle orthostatique ou collapsus cardiovasculaire). Ces effets indésirables peuvent survenir en particulier après une administration intraveineuse et chez les patients soumis à un stress physique.</p>
+<p class=AmmAnnexeTitre3>Affections du métabolisme et de la nutrition</p>
+<p class=AmmCorpsTexte><i>Rare :</i> modification de l’appétit.</p>
+<p class=AmmCorpsTexte><i>Fréquence indéterminée</i> : hypoglycémie.</p>
+<p class=AmmAnnexeTitre3>Affections respiratoires, thoraciques et médiastinales</p>
+<p class=AmmCorpsTexte><i>Rare :</i> dépression respiratoire, dyspnée.</p>
+<p class=AmmCorpsTexte><i>Fréquence indéterminée</i> : hoquet</p>
+<p class=AmmCorpsTexte>Une dépression respiratoire peut survenir, si les doses administrées dépassent largement les doses recommandées et si d'autres médicaments dépresseurs centraux sont administrés de façon concomitante (voir rubrique 4.5).</p>
+<p class=AmmCorpsTexte>L'aggravation d'un asthme a été également signalée, bien qu'une relation de causalité n'ait pas été établie.</p>
+<p class=AmmAnnexeTitre3>Affections du système nerveux</p>
+<p class=AmmCorpsTexte><i>Très fréquent</i> : vertiges.</p>
+<p class=AmmCorpsTexte><i>Fréquent </i>: céphalées, somnolence.</p>
+<p class=AmmCorpsTexte><i>Rare</i> : paresthésie, tremblements, convulsions, contractions musculaires involontaires, anomalie de la coordination, syncope, trouble de l’élocution.</p>
+<p class=AmmCorpsTexte><i>Fréquence indéterminée</i> : syndrome sérotoninergique.</p>
+<p class=AmmCorpsTexte>Des convulsions sont survenues principalement après administration de doses élevées de tramadol ou après un traitement concomitant par des médicaments qui peuvent abaisser le seuil convulsivant (voir rubriques 4.4 et 4.5).</p>
+<p class=AmmAnnexeTitre3>Affections psychiatriques</p>
+<p class=AmmCorpsTexte><i>Rare</i> : hallucinations, confusion, troubles du sommeil, délire, anxiété et cauchemars. On peut également observer après l’administration de tramadol, différents effets secondaires psychiques dont l’intensité et la nature varient d’un patient à l’autre (en fonction de la réactivité individuelle et de la durée du traitement). On peut aussi observer des troubles de l'humeur (habituellement une exaltation, occasionnellement une dysphorie), des modifications de l'activité (habituellement diminution de l'activité, occasionnellement un accroissement) et des modifications des capacités cognitive et sensorielle (par exemple, la capacité décisionnelle, des troubles de la perception).</p>
+<p class=AmmCorpsTexte>Des symptômes de sevrage, analogues à ceux notés lors d'un sevrage aux opiacés, peuvent survenir tels qu’agitation, anxiété, nervosité, insomnie, hyperkinésie, tremblements et symptômes gastro-intestinaux.</p>
+<p class=AmmCorpsTexte>D’autres symptômes de sevrage ont été très rarement rapportés, incluant : attaque de panique, anxiété sévère, hallucinations, paresthésies, acouphènes, autres troubles du SNC (comme par exemple confusion, délire, dépersonnalisation, déréalisation, paranoïa).</p>
+<p class=AmmAnnexeTitre3>Affections visuelles</p>
+<p class=AmmCorpsTexte><i>Rare</i> : myosis, mydriase, vision floue.</p>
+<p class=AmmAnnexeTitre3>Affections gastro-intestinales</p>
+<p class=AmmCorpsTexte><i>Très fréquent</i> : nausées.</p>
+<p class=AmmCorpsTexte><i>Fréquent </i>: constipation, sécheresse de la bouche, vomissements.</p>
+<p class=AmmCorpsTexte><i>Peu fréquent :</i> haut-le-cœur, inconfort gastro-intestinal (sensation de pesanteur gastrique, flatulences), diarrhées.</p>
+<p class=AmmAnnexeTitre3>Affections cutanées et des tissus sous-cutanés</p>
+<p class=AmmCorpsTexte><i>Fréquent :</i> hyperhidrose.</p>
+<p class=AmmCorpsTexte><i>Peu fréquent</i> : réactions cutanées (par exemple prurit, éruption cutanée, urticaire).</p>
+<p class=AmmAnnexeTitre3>Affections musculosquelettique et systémique</p>
+<p class=AmmCorpsTexte><i>Rare</i> : faiblesse musculaire.</p>
+<p class=AmmAnnexeTitre3>Affections hépatobiliaires</p>
+<p class=AmmCorpsTexte>Dans quelques cas isolés, une augmentation des enzymes hépatiques a été rapportée dans un rapport temporel avec l'utilisation thérapeutique du tramadol.</p>
+<p class=AmmAnnexeTitre3>Affections urinaires et rénales</p>
+<p class=AmmCorpsTexte><i>Rare</i> : troubles mictionnels (dysurie et rétention urinaire).</p>
+<p class=AmmAnnexeTitre3>Affections du système immunitaire</p>
+<p class=AmmCorpsTexte><i>Rare </i>: réactions allergiques (par exemple, dyspnée, bronchospasme, sifflement, œdème de Quincke) et anaphylaxie.</p>
+<p class=AmmAnnexeTitre3>Troubles généraux et anomalies au site d’administration</p>
+<p class=AmmCorpsTexte><i>Fréquent :</i> asthénie.</p>
+<p class=AmmAnnexeTitre3>Pharmacodépendance</p>
+<p class=AmmCorpsTexte>L’utilisation répétée de TRAMADOL ALMUS peut entraîner une dépendance aux médicaments (pharmacodépendance), même aux doses thérapeutiques. Le risque de pharmacodépendance peut varier en fonction des facteurs de risque individuels du patient, de la posologie et de la durée du traitement par opioïdes (voir rubrique 4.4).</p>
+<p class=AmmAnnexeTitre3>Déclaration des effets indésirables suspectés </p>
+<p class=AmmCorpsTexte>La déclaration des effets indésirables suspectés après autorisation du médicament est importante. Elle permet une surveillance continue du rapport bénéfice/risque du médicament. Les professionnels de santé déclarent tout effet indésirable suspecté via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet :<span style='color:red'> </span><span class=MsoHyperlink><a href="https://signalement.social-sante.gouv.fr/">https://signalement.social-sante.gouv.fr/</a></span>.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpSurdosage"><span id='4.9._Surdosage'>4.9. Surdosage</span></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278931"></a><a name="_Toc142278923">Symptômes</a></p>
+<p class=AmmCorpsTexte>En principe, lors d’une intoxication par le tramadol, des symptômes analogues à ceux provoqués par d’autres analgésiques à action centrale (opioïdes) sont attendus. Il s’agit en particulier d’un myosis, de vomissements, d’un collapsus cardiovasculaire, de troubles de la conscience allant jusqu’au coma, de convulsions et d’une dépression respiratoire allant jusqu’à l’arrêt respiratoire.</p>
+<p class=AmmCorpsTexte>Le syndrome sérotoninergique a également été rapporté.</p>
+<p class=AmmAnnexeTitre3>Traitement</p>
+<p class=AmmCorpsTexte>Prendre les mesures d’urgence générales habituelles. Assurer la liberté des voies respiratoires (aspiration), maintenir la ventilation et la circulation en fonction des symptômes. </p>
+<p class=AmmCorpsTexte>L’antidote en cas de dépression respiratoire est la naloxone. En expérimentation animale, la naloxone n’a exercé aucun effet sur les convulsions. Dans de tels cas, du diazépam devra être administré par voie intraveineuse.</p>
+<p class=AmmCorpsTexte>En cas d’intoxication par des formes orales, l’élimination gastro-intestinale au charbon actif ou par lavage gastrique est recommandée uniquement dans les 2 heures après la prise de tramadol. Passé ce délai, une décontamination gastro-intestinale peut-être utile en cas d’intoxication par des quantités exceptionnellement importantes de tramadol ou par des formes à libération prolongée.</p>
+<p class=AmmCorpsTexte>Le tramadol est épuré très faiblement du sérum par hémodialyse ou par hémofiltration. C’est pourquoi le traitement d’une intoxication aiguë par le TRAMADOL ALMUS à l’aide d’une hémodialyse ou d’une hémofiltration seule n’est pas approprié à une désintoxication.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPropPharmacologiques"><span id='5._PROPRIETES_PHARMACOLOGIQUES'>5. PROPRIETES PHARMACOLOGIQUES</span></a><a class="fr-link fr-icon-arrow-up-fill fr-link--icon-right lien-retour-hautdepage" aria-label="Redirection vers le haut de page" aria-describedby="tooltip-rpc-page-top-RcpPropPharmacologiques" href="#top"></a></p><span id='tooltip-rpc-page-top-RcpPropPharmacologiques' class='fr-tooltip fr-placement' role='tooltip' aria-hidden='true'>Redirection vers le haut de page</span>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacodynamiques"><span id='5.1._Propriétés_pharmacodynamiques'>5.1. Propriétés pharmacodynamiques</span></a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142278933">Classe pharmacothérapeutique : AUTRES OPIOIDES, Code ATC : N02AX02.</a></p>
+<p class=AmmCorpsTexte>Le tramadol est un analgésique opioïde d’action centrale. Il s'agit d'un agoniste pur et non sélectif des récepteurs morphiniques µ-, &#948;- et &#954;-; avec une affinité plus élevée pour les récepteurs µ. D'autres mécanismes qui contribuent aux effets analgésiques du produit, sont l'inhibition de la recapture neuronale de noradrénaline et l'augmentation de la libération de sérotonine.</p>
+<p class=AmmCorpsTexte>Le tramadol a un effet antitussif. A l'inverse de la morphine, une large gamme de doses analgésiques de tramadol ne présente pas d'effet dépresseur respiratoire. La motilité gastro-intestinale est également moins affectée. Les effets sur le système cardiovasculaire ont tendance à être peu marqués. La puissance du tramadol serait 1/10 à 1/6 de celle de la morphine.</p>
+<p class=AmmAnnexeTitre3>Population pédiatrique</p>
+<p class=AmmCorpsTexte>Les effets d’une administration orale ou parentérale de tramadol ont été étudiés dans des essais cliniques ayant inclus plus de 2000 patients pédiatriques âgés de 0 (nouveau-né) à 17 ans. Les indications étudiées dans ces essais comprenaient le traitement des douleurs post-chirurgicales (principalement abdominale), des douleurs suite à des extractions dentaires chirurgicales, des fractures, des brûlures ou des traumatismes ainsi que d'autres conditions douloureuses pouvant nécessiter un traitement antalgique pendant au moins 7 jours.</p>
+<p class=AmmCorpsTexte>A des doses allant jusqu'à 2 mg/kg en dose unique ou 8 mg/kg par jour en doses multiples (sans dépasser 400 mg par jour), l'efficacité du tramadol a été jugée supérieure au placebo, et supérieure ou égale au paracétamol, à la nalbuphine, à la péthidine ou à la morphine à faible dose. Les essais conduits ont confirmé l'efficacité du tramadol. Le profil de sécurité du tramadol était similaire chez les patients adultes et les patients pédiatriques âgés de plus de 1 an (voir rubrique 4.2).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacocinetiques"><span id='5.2._Propriétés_pharmacocinétiques'>5.2. Propriétés pharmacocinétiques</span></a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142278934"><u>Absorption </u></a></p>
+<p class=AmmCorpsTexte>Le tramadol est absorbé rapidement et presque complètement après administration orale. La biodisponibilité d'une dose orale de 50 à 100 mg est comprise entre 70 et 90 %. Après administration orale répétée de 50 à 100 mg de tramadol toutes les 6 heures, l'état d'équilibre est atteint après environ 36 heures et la biodisponibilité augmente pour dépasser 90 %. La concentration plasmatique maximale de tramadol après une dose orale de 100 mg est d'environ 300 ng/ml et est atteinte environ deux heures après l'administration. </p>
+<p class=AmmCorpsTexte>La demi-vie de la phase d'absorption est de 0,38 ± 0,18 h. </p>
+<p class=AmmCorpsTexteGras><u>Distribution </u></p>
+<p class=AmmCorpsTexte>La demi-vie de la phase de distribution a une t½<sub>&#945;</sub> d'environ 0,8 heure. Le volume de distribution est de 3 à 4 l/kg. </p>
+<p class=AmmCorpsTexte>Le tramadol a une affinité tissulaire élevée (V<sub>d,ß </sub>= 203 ± 40 l). La liaison du tramadol aux protéines plasmatiques humaines est d'environ 20 % et cette liaison semble indépendante de la concentration (jusqu'à 10 &#956;g/ml). La saturation de la liaison aux protéines plasmatiques ne se produit qu'à des concentrations bien supérieures à celles cliniquement pertinentes. </p>
+<p class=AmmCorpsTexte>Le tramadol traverse les barrières hémato-encéphalique et placentaire. Le tramadol et son dérivé O-déméthylé ont été détectés en très petites quantités dans le lait maternel (respectivement 0,1 % et 0,02 % de la dose administrée). </p>
+<p class=AmmCorpsTexteGras><u>Métabolisme ou biotransformation </u></p>
+<p class=AmmCorpsTexte>Le métabolisme du tramadol chez l'homme se produit principalement par O-déméthylation et N-déméthylation, ainsi que par conjugaison de dérivés O-déméthylés avec l'acide glucuronique. Seul l'O-déméthyltramadol est pharmacologiquement actif. Des différences quantitatives interindividuelles significatives existent entre les autres métabolites. À ce jour, 11 métabolites ont été identifiés dans l'urine. Des études animales ont montré que l'O-déméthyltramadol est 2 à 4 fois plus puissant que le composé parent. Sa demi-vie t<sub>1/2,ß </sub>(chez 6 volontaires sains) est de 7,9 h (entre 5,4 et 9,6 h), ce qui est approximativement la même que celle du tramadol. </p>
+<p class=AmmCorpsTexte>L'inhibition d'un ou des deux types d'isoenzymes CYP3A4 et CYP2D6, impliqués dans la biotransformation du tramadol, peut affecter la concentration plasmatique du tramadol ou de son métabolite actif. </p>
+<p class=AmmCorpsTexteGras><u>Élimination </u></p>
+<p class=AmmCorpsTexte>Le tramadol et ses métabolites sont presque entièrement éliminés par voie rénale. L'élimination urinaire cumulée représente 90 % de la radioactivité totale de la dose administrée. En cas de dysfonctionnement rénal et hépatique, la demi-vie peut être légèrement prolongée. Chez les patients atteints de cirrhose du foie, la demi-vie d'élimination est de 13,3 ± 4,9 h (tramadol) et de 18,5 ± 9,4 h (O-desméthyltramadol), les cas extrêmes étant respectivement de 22,3 h et 36 h. Chez les patients souffrant d'insuffisance rénale (clairance de la créatinine < 5 ml/min), les valeurs étaient de 11 ± 3,2 h et 16,9 ± 3 h, les cas extrêmes étant respectivement de 19,5 h et 43,2 h. </p>
+<p class=AmmCorpsTexte>Quel que soit le mode d'administration, la demi-vie d'élimination t<sub>1/2,ß </sub>est d'environ 6 h. Chez les patients de plus de 75 ans, cette valeur peut augmenter d'environ 1,4 fois. </p>
+<p class=AmmCorpsTexteGras><u>Linéarité</u></p>
+<p class=AmmCorpsTexte>Le profil pharmacocinétique du tramadol est linéaire dans la plage de doses thérapeutiques. La relation entre les concentrations sériques et l'effet analgésique dépend de la dose ; elle peut toutefois varier considérablement dans certains cas. En général, une concentration sérique de 100 à 300 ng/ml est efficace.</p>
+<p class=AmmAnnexeTitre3>Population pédiatrique</p>
+<p class=AmmCorpsTexte>Les profils pharmacocinétiques du tramadol et de l’O-desméthyltramadol après une dose unique et des doses multiples en administration orale à des sujets de 1 an à 16 ans ont été généralement semblables à ceux observés chez l’adulte lorsque la dose était ajustée au poids corporel, mais avec une variabilité plus élevée les sujets les plus jeunes d’âge pouvant aller jusqu’à 8 ans.</p>
+<p class=AmmCorpsTexte>Concernant les enfants de moins de 1 an, les profils pharmacocinétiques du tramadol et de l’O-desméthyltramadol ont été étudiés, mais n'ont pas été entièrement caractérisés. Les données pour ce groupe d’âge issues des études cliniques indiquent que le taux de formation de l’O-desméthyltramadol via le cytochrome CYP2D6 augmente de manière continue chez le nouveau-né, et les niveaux d'activité du CYP2D6 de l’adulte seraient atteints à environ 1 an. En outre, les systèmes immatures de glucuronidation ainsi que la fonction rénale immature peuvent entrainer une élimination lente et l'accumulation de l’O-desméthyltramadol chez les enfants de moins de 1 an.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpSecuritePreclinique"><span id='5.3._Données_de_sécurité_préclinique'>5.3. Données de sécurité préclinique</span></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278935">Après administration orale et parentérale répétée de tramadol pendant 6 à 26 semaines chez le rat et chez le chien et après administration orale pendant 12 mois chez le chien, les études hématologiques, biochimiques et histologiques n'ont montré aucun signe en faveur de modifications liées au principe actif. Des manifestations neurologiques centrales sont survenues uniquement après des doses élevées, considérablement supérieures aux doses thérapeutiques: agitation, salivation, convulsions et réduction de la prise de poids. Les rats et les chiens ont respectivement toléré des doses orales de 20 mg/kg et 10 mg/kg, et les chiens des doses rectales de 20 mg/kg, sans présenter de réactions.</a></p>
+<p class=AmmCorpsTexte>Chez le rat, des posologies de tramadol supérieures ou égales à 50 mg/kg/jour ont provoqué des effets toxiques chez les rates gestantes et un accroissement de la mortalité néonatale. On a observé dans la descendance des retards de croissance sous forme d'anomalies de l'ossification et des retards à l'ouverture vaginale et oculaire. La fertilité des animaux mâles et femelles n'a pas été altérée. Chez le lapin, on a mis en évidence des effets toxiques chez les mères à partir de doses de 125 mg/kg et des anomalies squelettiques dans la descendance.</p>
+<p class=AmmCorpsTexte>On a retrouvé dans certains tests <i>in vitro</i> des signes en faveur d'un effet mutagène. Les études <i>in vivo</i> n'ont pas montré de tels effets. Selon l'expérience acquise à ce jour, le tramadol peut être considéré comme non mutagène.</p>
+<p class=AmmCorpsTexte>Des études ont été effectuées chez les rats et les souris sur le potentiel carcinogène du chlorhydrate de tramadol. L'étude chez les rats n'a montré aucune preuve de l’augmentation de l’incidence des tumeurs, liée au principe actif. Dans l'étude chez les souris, on a noté un accroissement de la fréquence des adénomes hépatocellulaires chez les animaux mâles (accroissement dose-dépendant non significatif à partir de 15 mg/kg) et un accroissement des tumeurs pulmonaires chez les femelles pour tous les groupes posologiques (significatif, mais non dose-dépendant).</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesPharmaceutiques"><span id='6._DONNEES_PHARMACEUTIQUES'>6. DONNEES PHARMACEUTIQUES</span></a><a class="fr-link fr-icon-arrow-up-fill fr-link--icon-right lien-retour-hautdepage" aria-label="Redirection vers le haut de page" aria-describedby="tooltip-rpc-page-top-RcpDonneesPharmaceutiques" href="#top"></a></p><span id='tooltip-rpc-page-top-RcpDonneesPharmaceutiques' class='fr-tooltip fr-placement' role='tooltip' aria-hidden='true'>Redirection vers le haut de page</span>
+<p class="AmmAnnexeTitre2"><a name="RcpListeExcipients"><span id='6.1._Liste_des_excipients'>6.1. Liste des excipients</span></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278937">Cellulose microcristalline PH 102, carboxyméthylamidon sodique (type A), silice colloïdale anhydre, stéarate de magnésium.</a></p>
+<p class=AmmAnnexeTitre4><span class=ammcorpstextegrascar0><span style='color:black'>Enveloppe de la gélule :</span></span></p>
+<p class=AmmCorpsTexte>Gélatine, dioxyde de titane (E171).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpIncompatibilites"><span id='6.2._Incompatibilités'>6.2. Incompatibilités</span></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278938">Sans objet.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpDureeConservation"><span id='6.3._Durée_de_conservation'>6.3. Durée de conservation</span></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278939">3 ans.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecConservation"><span id='6.4._Précautions_particulières_de_conservation'>6.4. Précautions particulières de conservation</span></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278940"><span lang=FR-BE>A conserver dans l’emballage d’origine.</span></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage"><span id='6.5._Nature_et_contenu_de_l_emballage_extérieur_'>6.5. Nature et contenu de l'emballage extérieur </span></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278942"></a><a name="_Toc142278941">10, 20, 30, 60 et 100 gélules sous plaquettes (PVC/PVDC/Aluminium) de couleur blanche opaque.</a></p>
+<p class=AmmCorpsTexte>Toutes les présentations peuvent ne pas être commercialisées.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecEmpl"><span id='6.6._Précautions_particulières_d_élimination_et_de_manipulation'>6.6. Précautions particulières d’élimination et de manipulation</span></a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Tout médicament non utilisé ou déchet doit être éliminé conformément à la réglementation en vigueur.</span></p>
+<p class="AmmAnnexeTitre1"><a name="RcpTitulaireAmm"><span id='7._TITULAIRE_DE_L’AUTORISATION_DE_MISE_SUR_LE_MARCHE'>7. TITULAIRE DE L’AUTORISATION DE MISE SUR LE MARCHE</span></a><a class="fr-link fr-icon-arrow-up-fill fr-link--icon-right lien-retour-hautdepage" aria-label="Redirection vers le haut de page" aria-describedby="tooltip-rpc-page-top-RcpTitulaireAmm" href="#top"></a></p><span id='tooltip-rpc-page-top-RcpTitulaireAmm' class='fr-tooltip fr-placement' role='tooltip' aria-hidden='true'>Redirection vers le haut de page</span>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142278943">ALMUS FRANCE</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>211 AVENUE DES GRESILLONS</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>92230 GENNEVILLIERS</p>
+<p class="AmmAnnexeTitre1"><a name="RcpNumAutor"><span id='8._NUMERO(S)_D’AUTORISATION_DE_MISE_SUR_LE_MARCHE'>8. NUMERO(S) D’AUTORISATION DE MISE SUR LE MARCHE</span></a><a class="fr-link fr-icon-arrow-up-fill fr-link--icon-right lien-retour-hautdepage" aria-label="Redirection vers le haut de page" aria-describedby="tooltip-rpc-page-top-RcpNumAutor" href="#top"></a></p><span id='tooltip-rpc-page-top-RcpNumAutor' class='fr-tooltip fr-placement' role='tooltip' aria-hidden='true'>Redirection vers le haut de page</span>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 302 744 7 7 : 10 gélules sous plaquettes (PVC/PVDC/Aluminium).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 301 768 6 3 : 20 gélules sous plaquettes (PVC/PVDC/Aluminium).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 301 768 7 0 : 30 gélules sous plaquettes (PVC/PVDC/Aluminium).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 301 768 8 7 : 60 gélules sous plaquettes (PVC/PVDC/Aluminium).</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 550 640 7 7 : 100 gélules sous plaquettes (PVC/PVDC/Aluminium).</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPremiereAutorisation"><span id='9._DATE_DE_PREMIERE_AUTORISATION/DE_RENOUVELLEMENT_DE_L’AUTORISATION'>9. DATE DE PREMIERE AUTORISATION/DE RENOUVELLEMENT DE L’AUTORISATION</span></a><a class="fr-link fr-icon-arrow-up-fill fr-link--icon-right lien-retour-hautdepage" aria-label="Redirection vers le haut de page" aria-describedby="tooltip-rpc-page-top-RcpPremiereAutorisation" href="#top"></a></p><span id='tooltip-rpc-page-top-RcpPremiereAutorisation' class='fr-tooltip fr-placement' role='tooltip' aria-hidden='true'>Redirection vers le haut de page</span>
+<p class=AmmCorpsTexte><a name="_Toc142278945">[à compléter ultérieurement par le titulaire]</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDateRevision"><span id='10._DATE_DE_MISE_A_JOUR_DU_TEXTE'>10. DATE DE MISE A JOUR DU TEXTE</span></a><a class="fr-link fr-icon-arrow-up-fill fr-link--icon-right lien-retour-hautdepage" aria-label="Redirection vers le haut de page" aria-describedby="tooltip-rpc-page-top-RcpDateRevision" href="#top"></a></p><span id='tooltip-rpc-page-top-RcpDateRevision' class='fr-tooltip fr-placement' role='tooltip' aria-hidden='true'>Redirection vers le haut de page</span>
+<p class=AmmCorpsTexte><a name="_Toc142278946">[à compléter ultérieurement par le titulaire]</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDosimetrie"><span id='11._DOSIMETRIE'>11. DOSIMETRIE</span></a><a class="fr-link fr-icon-arrow-up-fill fr-link--icon-right lien-retour-hautdepage" aria-label="Redirection vers le haut de page" aria-describedby="tooltip-rpc-page-top-RcpDosimetrie" href="#top"></a></p><span id='tooltip-rpc-page-top-RcpDosimetrie' class='fr-tooltip fr-placement' role='tooltip' aria-hidden='true'>Redirection vers le haut de page</span>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpInstPrepRadioph"><span id='12._INSTRUCTIONS_POUR_LA_PREPARATION_DES_RADIOPHARMACEUTIQUES'>12. INSTRUCTIONS POUR LA PREPARATION DES RADIOPHARMACEUTIQUES</span></a><a class="fr-link fr-icon-arrow-up-fill fr-link--icon-right lien-retour-hautdepage" aria-label="Redirection vers le haut de page" aria-describedby="tooltip-rpc-page-top-RcpInstPrepRadioph" href="#top"></a></p><span id='tooltip-rpc-page-top-RcpInstPrepRadioph' class='fr-tooltip fr-placement' role='tooltip' aria-hidden='true'>Redirection vers le haut de page</span>
+<p class=AmmCorpsTexte><a name="_Toc142278948">Sans objet.</a></p>
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm'>
+<p class="AmmAnnexeTitre"><a name="RcpCondPrescription">CONDITIONS DE PRESCRIPTION ET DE DELIVRANCE</a></p>
+</div>
+<p class=AmmCorpsTexte>Liste I.</p>
+<p class=AmmCorpsTexte>Prescription en toutes lettres sur ordonnance sécurisée. Prescription limitée à 12 semaines</p>
+<b><span style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#0B3D92;
+text-transform:uppercase'><br clear=all>
+</span></b>
+</BODY>
+</HTML>
+
+      </div>
+      </div>
+</div>
+                </div>
+              
+
+                              <div id="tabpanel-bon-usage-panel" class="fr-tabs__panel" role="tabpanel"
+                     aria-labelledby="tabpanel-bon-usage"
+                     tabindex="0">
+                  <div class="fr-header-section-page-info">
+  <section class="fr-mb-3v fr-py-3v" id="top">
+    <div class="fr-grid-row fr-grid-row--gutters">
+
+      
+      <div class="fr-col-12 fr-col-md">
+        <div class="fr-editor">
+
+          
+          
+                      <div class="fr-notice fr-notice--info" style="margin-bottom: 40px;">
+              <div class="fr-container">
+                <div class="fr-notice__body">
+                  <p>
+                  <p class="fr-notice__desc">
+                    Ce médicament n'est ou ne sera bientôt plus disponible sur le marché.<br>
+                    Si vous prenez actuellement ce médicament, il vous est recommandé d'en parler avec votre médecin
+                    ou avec votre pharmacien qui pourra vous orienter vers un autre traitement.
+                  </p>
+                  </p>
+                </div>
+              </div>
+            </div>
+          
+          
+          
+                      <div class="fr-grid-row">
+              <div class="fr-col">
+                <h5 id="heading-informations-importantes" role="heading" aria-level="5">
+                  <span class="fr-icon-information-line text-color-orange" aria-hidden="true"></span> Informations
+                  importantes
+                  <a class="fr-link fr-icon-arrow-up-fill fr-link--icon-left lien-retour-hautdepage" href="#top"
+                     id="section-glossaire__top_link" role="link"
+                     aria-describedby="tooltip-link-page-top"
+                     aria-label="Redirection vers le haut de page"></a>
+                  <span id="tooltip-link-page-top" class="fr-tooltip fr-placement" role="tooltip" aria-hidden="true">
+                      Redirection vers le haut de page
+                    </span>
+                </h5>
+                <p aria-labelledby="heading-informations-importantes">Les informations importantes disponibles pour ce médicament sont les suivantes : <br /><ul id="liste_infos_importantes" role="list"><li role='listitem'>    <a  target='_blank'    href='https://ansm.sante.fr/actualites/synapse-labs-nous-nous-prononcons-sur-les-autorisations-de-mise-sur-le-marche-de-certains-medicaments'>Synapse Labs : nous nous prononçons sur les autorisations de mise sur le marché de certains médicaments</a></li><li role='listitem'>    <a  target='_blank'    href='https://ansm.sante.fr/actualites/tramadol-moins-de-comprimes-dans-les-boites-pour-un-meilleur-usage'>Tramadol : moins de comprimés dans les boîtes pour un meilleur usage</a></li></ul></p>
+              </div>
+            </div>
+          
+          
+          
+                  </div>
+      </div>
+    </div>
+  </section>
+</div>
+                </div>
+              
+                              <div id="tabpanel-notice-panel" class="fr-tabs__panel" role="tabpanel" aria-labelledby="tabpanel-notice"
+                     tabindex="0">
+                  <div class="fr-container">
+  <div class="fr-grid-row">
+    <div class="fr-col-12 fr-col-md-4">
+      <nav class="fr-sidemenu  fr-sidemenu--sticky-full-height" aria-labelledby="fr-sidemenu-title">
+        <div class="fr-sidemenu__inner">
+          <button role="button" class="fr-sidemenu__btn" aria-controls="menu-776" aria-expanded="false"
+                  aria-label="Menu principal : Notice"> Sommaire de la notice
+          </button>
+          <div class="fr-collapse" id="menu-776">
+            <ul class="fr-sidemenu__list">
+                              <li class="fr-sidemenu__item">
+                  <a class="fr-sidemenu__link" href="#Dénomination_du_médicament"
+                     aria-label="Dénomination du médicament (Lien de redirection)">
+                    Dénomination du médicament
+                  </a>
+                </li>
+                              <li class="fr-sidemenu__item">
+                  <a class="fr-sidemenu__link" href="#Encadré"
+                     aria-label="Encadré (Lien de redirection)">
+                    Encadré
+                  </a>
+                </li>
+                              <li class="fr-sidemenu__item">
+                  <a class="fr-sidemenu__link" href="#Que_contient_cette_notice_?"
+                     aria-label="Que contient cette notice ? (Lien de redirection)">
+                    Que contient cette notice ?
+                  </a>
+                </li>
+                              <li class="fr-sidemenu__item">
+                  <a class="fr-sidemenu__link" href="#1._QU_EST-CE_QUE_TRAMADOL_ALMUS_50_mg,_gélule_ET_DANS_QUELS_CAS_EST-IL_UTILISE_?"
+                     aria-label="1. QU’EST-CE QUE TRAMADOL ALMUS 50 mg, gélule ET DANS QUELS CAS EST-IL UTILISE ? (Lien de redirection)">
+                    1. QU’EST-CE QUE TRAMADOL ALMUS 50 mg, gélule ET DANS QUELS CAS EST-IL UTILISE ?
+                  </a>
+                </li>
+                              <li class="fr-sidemenu__item">
+                  <a class="fr-sidemenu__link" href="#2._QUELLES_SONT_LES_INFORMATIONS_A_CONNAITRE_AVANT_DE_PRENDRE_TRAMADOL_ALMUS_50_mg,_gélule_?"
+                     aria-label="2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT DE PRENDRE TRAMADOL ALMUS 50 mg, gélule ? (Lien de redirection)">
+                    2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT DE PRENDRE TRAMADOL ALMUS 50 mg, gélule ?
+                  </a>
+                </li>
+                              <li class="fr-sidemenu__item">
+                  <a class="fr-sidemenu__link" href="#3._COMMENT_PRENDRE_TRAMADOL_ALMUS_50_mg,_gélule_?"
+                     aria-label="3. COMMENT PRENDRE TRAMADOL ALMUS 50 mg, gélule ? (Lien de redirection)">
+                    3. COMMENT PRENDRE TRAMADOL ALMUS 50 mg, gélule ?
+                  </a>
+                </li>
+                              <li class="fr-sidemenu__item">
+                  <a class="fr-sidemenu__link" href="#4._QUELS_SONT_LES_EFFETS_INDESIRABLES_EVENTUELS_?"
+                     aria-label="4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ? (Lien de redirection)">
+                    4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?
+                  </a>
+                </li>
+                              <li class="fr-sidemenu__item">
+                  <a class="fr-sidemenu__link" href="#5._COMMENT_CONSERVER_TRAMADOL_ALMUS_50_mg,_gélule_?"
+                     aria-label="5. COMMENT CONSERVER TRAMADOL ALMUS 50 mg, gélule ? (Lien de redirection)">
+                    5. COMMENT CONSERVER TRAMADOL ALMUS 50 mg, gélule ?
+                  </a>
+                </li>
+                              <li class="fr-sidemenu__item">
+                  <a class="fr-sidemenu__link" href="#6._CONTENU_DE_L_EMBALLAGE_ET_AUTRES_INFORMATIONS"
+                     aria-label="6. CONTENU DE L’EMBALLAGE ET AUTRES INFORMATIONS (Lien de redirection)">
+                    6. CONTENU DE L’EMBALLAGE ET AUTRES INFORMATIONS
+                  </a>
+                </li>
+                          </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="contenu" class="fr-col-12 fr-col-md-8 fr-py-12v">
+      <div class="fr-grid-row--right fr-col-md fr-mb-7v fr-no-print print-div">
+        <button aria-label="Imprimer fiche info du médicament : TRAMADOL ALMUS 50 mg, gélule - Médicament  - BDPM" class="fr-link print-button">
+          <span aria-hidden="true" class="fr-icon-printer-fill"></span>
+          <span class="sr-only" rel="noopener noreferrer">Imprimer</span>
+        </button>
+      </div>
+            <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//FR" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<!-- template_9 -->
+<HTML>
+  <HEAD>
+    
+    <META name="organization" content="ANSM : Agence Nationale de Sécurité du Médicament et des Produit de santé">
+    <META name="description" content="Notice patient">
+    <META name="keywords" content="TRAMADOL ALMUS 50 mg, gélule, Médicament, spécialité pharmaceutique, RCP, Notice, Dénomination, Forme pharmaceutique, Indications, Contre-indications, Effets secondaires">
+    <TITLE>Notice patient</TITLE>
+    
+  </HEAD>
+  <BODY>
+
+<p class="DateNotif">ANSM - Mis à jour le : 19/03/2026</p>
+    <p class="AmmNoticeTitre1">
+        <a name="Ann3bDenomination"><span id='Dénomination_du_médicament'>Dénomination du médicament</span></a>
+        <a href="#top" class="fr-link fr-icon-arrow-up-fill fr-link--icon-right lien-retour-hautdepage"
+           aria-label="Redirection vers le haut de page"
+           aria-describedby="tooltip-notice-page-top-Ann3bDenomination"></a>
+        <span id="tooltip-notice-page-top-Ann3bDenomination" class="fr-tooltip fr-placement" role="tooltip" aria-hidden="true">
+            Redirection vers le haut de page
+        </span>
+    </p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'><a name="_Toc142278999">TRAMADOL ALMUS 50 mg, gélule</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Chlorhydrate de tramadol</p>
+    <p class="AmmNoticeTitre1">
+        <a name="Ann3bEncadre"><span id='Encadré'>Encadré</span></a>
+        <a href="#top" class="fr-link fr-icon-arrow-up-fill fr-link--icon-right lien-retour-hautdepage"
+           aria-label="Redirection vers le haut de page"
+           aria-describedby="tooltip-notice-page-top-Ann3bEncadre"></a>
+        <span id="tooltip-notice-page-top-Ann3bEncadre" class="fr-tooltip fr-placement" role="tooltip" aria-hidden="true">
+            Redirection vers le haut de page
+        </span>
+    </p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279000"><span lang=FR-BE>Veuillez lire attentivement cette notice avant de prendre ce médicament car elle contient des informations importantes pour vous.</span></a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Gardez cette notice. Vous pourriez avoir besoin de la relire.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous avez d’autres questions, interrogez votre médecin ou votre pharmacien.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Ce médicament vous a été personnellement prescrit. Ne le donnez pas à d’autres personnes. Il pourrait leur être nocif, même si les signes de leur maladie sont identiques aux vôtres.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. </span>Voir rubrique 4.</p>
+    <p class="AmmNoticeTitre1">
+        <a name="Ann3bSomm"><span id='Que_contient_cette_notice_?'>Que contient cette notice ?</span></a>
+        <a href="#top" class="fr-link fr-icon-arrow-up-fill fr-link--icon-right lien-retour-hautdepage"
+           aria-label="Redirection vers le haut de page"
+           aria-describedby="tooltip-notice-page-top-Ann3bSomm"></a>
+        <span id="tooltip-notice-page-top-Ann3bSomm" class="fr-tooltip fr-placement" role="tooltip" aria-hidden="true">
+            Redirection vers le haut de page
+        </span>
+    </p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>1. Qu'est-ce que TRAMADOL ALMUS 50 mg, gélule et dans quels cas est-il utilisé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>2. Quelles sont les informations à connaître avant de prendre TRAMADOL ALMUS 50 mg, gélule ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>3. Comment prendre TRAMADOL ALMUS 50 mg, gélule ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>4. Quels sont les effets indésirables éventuels ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>5. Comment conserver TRAMADOL ALMUS 50 mg, gélule ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'><span style='color:black'>6. Contenu de l’emballage et autres informations.</span></p>
+    <p class="AmmAnnexeTitre1">
+        <a name="Ann3bQuestceque"><span id='1._QU_EST-CE_QUE_TRAMADOL_ALMUS_50_mg,_gélule_ET_DANS_QUELS_CAS_EST-IL_UTILISE_?'>1. QU’EST-CE QUE TRAMADOL ALMUS 50 mg, gélule ET DANS QUELS CAS EST-IL UTILISE ?</span></a>
+        <a href="#top" class="fr-link fr-icon-arrow-up-fill fr-link--icon-right lien-retour-hautdepage"
+           aria-label="Redirection vers le haut de page"
+           aria-describedby="tooltip-annexe-page-top-Ann3bQuestceque"></a>
+        <span id="tooltip-annexe-page-top-Ann3bQuestceque" class="fr-tooltip fr-placement" role="tooltip" aria-hidden="true">
+            Redirection vers le haut de page
+        </span>
+    </p>
+<p class=AmmCorpsTexte><a name="_Toc142279004"><span style='color:black'>Le tramadol (la substance de TRAMADOL ALMUS) est un antalgique (substance calmant la douleur) appartenant à la classe des opioïdes qui agit sur le système nerveux central. Il soulage la douleur en agissant sur des cellules nerveuses particulières de la moelle épinière et du cerveau.</span></a></p>
+<p class=AmmCorpsTexte><span style='color:black'>Ce médicament est indiqué dans le traitement des douleurs modérées à sévères. </span></p>
+    <p class="AmmAnnexeTitre1">
+        <a name="Ann3bInfoNecessaires"><span id='2._QUELLES_SONT_LES_INFORMATIONS_A_CONNAITRE_AVANT_DE_PRENDRE_TRAMADOL_ALMUS_50_mg,_gélule_?'>2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT DE PRENDRE TRAMADOL ALMUS 50 mg, gélule ?</span></a>
+        <a href="#top" class="fr-link fr-icon-arrow-up-fill fr-link--icon-right lien-retour-hautdepage"
+           aria-label="Redirection vers le haut de page"
+           aria-describedby="tooltip-annexe-page-top-Ann3bInfoNecessaires"></a>
+        <span id="tooltip-annexe-page-top-Ann3bInfoNecessaires" class="fr-tooltip fr-placement" role="tooltip" aria-hidden="true">
+            Redirection vers le haut de page
+        </span>
+    </p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279015">Ne prenez jamais TRAMADOL ALMUS 50 mg, gélule :</a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes allergique au tramadol, ou à l’un des autres composants contenus dans ce médicament, mentionnés dans la rubrique 6 ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>en cas d’intoxication aiguë par l’alcool, les somnifères, d’autres médicaments contre la douleur ou des médicaments psychotropes (médicaments qui agissent sur l’humeur et les émotions) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous prenez en même temps des inhibiteurs de la MAO (médicaments utilisés pour le traitement de la dépression) ou si vous en avez pris au cours des 14 jours précédant le traitement par Tramadol (voir la rubrique « Autres médicaments et TRAMADOL ALMUS 50 mg, gélule ») ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes épileptique et que vos crises ne sont pas bien contrôlées par un traitement ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>comme traitement de substitution dans le cadre du sevrage d’une toxicomanie.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Avertissements et précautions</p>
+<p class=AmmCorpsTexte>Adressez-vous à votre médecin ou votre pharmacien avant de prendre TRAMADOL ALMUS :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous estimez que vous êtes dépendant à d’autres antalgiques (opioïdes) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous souffrez de troubles de la conscience (si vous avez l’impression que vous allez vous évanouir) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes en état de choc (ce qui peut se manifester par des sueurs froides) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez des difficultés respiratoires ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous souffrez d’hypertension intracrânienne (par exemple, après une blessure à la tête ou une maladie du cerveau) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes atteint d’une maladie du foie ou des reins ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous présentez une tendance à l’épilepsie ou aux convulsions car le risque de crise d’épilepsie peut être augmenté ;</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous souffrez de dépression et prenez des antidépresseurs, dans la mesure où certains d’entre eux peuvent interagir avec le tramadol (voir «Autres médicaments et TRAMADOL ALMUS»).</p>
+<p class=AmmCorpsTexte>Il existe un faible risque que vous souffriez d'un syndrome sérotoninergique qui peut survenir après avoir pris du tramadol en association avec certains antidépresseurs ou du tramadol seul. Consultez immédiatement un médecin si vous présentez l'un des symptômes liés à ce problème grave (voir rubrique 4 « Quels sont les effets indésirables éventuels »). </p>
+<p class=AmmCorpsTexte>Si l'une des situations ci-dessus vous concerne, veuillez en parler à votre médecin avant de commencer à prendre ce médicament. </p>
+<p class=AmmCorpsTexteGras>Tolérance, dépendance et addiction</p>
+<p class=AmmCorpsTexte>Ce médicament contient du tramadol qui est un médicament opioïde. L’utilisation répétée d’analgésiques opioïdes peut entrainer une diminution de l’efficacité du médicament (vous vous y habituez, ce que l’on appelle la tolérance). L’utilisation répétée de TRAMADOL ALMUS peut également entraîner une dépendance, un abus et une addiction, qui peuvent aboutir à un surdosage potentiellement mortel. Plus la dose est élevée et la durée d’utilisation est prolongée, plus le risque de développer ces effets secondaires sera accru. </p>
+<p class=AmmCorpsTexte>La dépendance ou l’addiction peuvent vous donner l’impression de ne plus contrôler la quantité de médicaments que vous devez prendre ou la fréquence à laquelle vous devez les prendre. </p>
+<p class=AmmCorpsTexte>Le risque de développer une dépendance ou une addiction varie d’une personne à l’autre. Vous pouvez présenter un risque accru de développer une dépendance ou une addiction à TRAMADOL ALMUS si :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous ou un membre de votre famille avez déjà développé un abus ou une dépendance à l’alcool, à des médicaments sur ordonnance ou à des substances illicites (« addiction »).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous fumez.</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous avez déjà présenté des troubles de l’humeur (dépression, anxiété ou trouble de la personnalité) ou avez été traité(e) par un psychiatre pour d’autres troubles de la santé mentale.</p>
+<p class=AmmCorpsTexteGras>Si vous remarquez l’un des signes suivants alors que vous prenez TRAMADOL ALMUS, celui-ci pourrait indiquer que vous avez développé une dépendance ou une addiction :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous avez besoin de prendre le médicament pendant une durée supérieure à celle recommandée par votre médecin</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous avez besoin de prendre une dose supérieure à la dose recommandée </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous utilisez le médicament pour des raisons autres que celles pour lesquelles il vous a été prescrit à l’origine, par exemple, « pour rester calme » ou « pour vous aider à dormir » </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous avez fait des tentatives répétées et infructueuses d’arrêter ou de contrôler l’utilisation du médicament </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous ne vous sentez pas bien lorsque vous arrêtez de prendre le médicament, et vous vous sentez mieux une fois que vous le prenez à nouveau (« effets de sevrage »)</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Si vous remarquez l’un de ces signes, parlez-en à votre médecin pour discuter de la démarche à suivre pour vous au sujet du traitement, y compris le moment où il est approprié d’arrêter et la façon d’arrêter en toute sécurité (voir rubrique 3, Si vous arrêtez de prendre TRAMADOL ALMUS).</p>
+<p class=AmmCorpsTexte><u>Troubles respiratoires liés au sommeil </u></p>
+<p class=AmmCorpsTexte>TRAMADOL ALMUS peut provoquer des troubles respiratoires liés au sommeil, tels que l’apnée centrale du sommeil (pauses respiratoires pendant le sommeil) et l’hypoxémie liée au sommeil (faible taux d’oxygène dans le sang). </p>
+<p class=AmmCorpsTexte>Le risque de souffrir d’apnée centrale du sommeil dépend de la dose d’opioïdes. Votre médecin peut envisager de diminuer votre dose totale d’opioïdes si vous souffrez d’apnée centrale du sommeil.</p>
+<p class=AmmCorpsTexte>Il existe un faible risque que vous présentiez un syndrome sérotoninergique susceptible de survenir après avoir pris du tramadol en association avec certains antidépresseurs ou du tramadol seul. Consultez immédiatement un médecin si vous avez des symptômes liés à ce syndrome sévère (voir rubrique 4 «Quels sont les effets indésirables éventuels ?»).</p>
+<p class=AmmCorpsTexte>Des crises d’épilepsie ont été rapportées chez des patients prenant du tramadol à la dose recommandée. Le risque peut être augmenté si les doses dépassent la posologie journalière maximale recommandée (400 mg). </p>
+<p class=AmmCorpsTexte>Veuillez noter que ce médicament peut entraîner une dépendance physique et psychologique. En cas de prise prolongée de ce médicament, son effet peut diminuer et il faut alors prendre des doses plus élevées (développement d'une tolérance). Chez les patients ayant tendance à abuser des médicaments ou qui sont dépendants des médicaments, le traitement par TRAMADOL ALMUS  ne doit être effectué que sur de courtes périodes et sous surveillance médicale stricte. </p>
+<p class=AmmCorpsTexte>Veuillez également informer votre médecin si l'un de ces problèmes survient pendant le traitement par ce médicament ou s'il s'est déjà produit dans le passé.</p>
+<p class=AmmCorpsTexte>Le tramadol est transformé dans le foie par une enzyme. Des variations au niveau de cette enzyme sont présentes chez certains patients, ce qui peut avoir des conséquences différentes selon les personnes. Chez certains, la douleur pourra ne pas être suffisamment soulagée, tandis que d’autres seront plus susceptibles de présenter des effets indésirables graves. Si vous remarquez l’un des effets indésirables suivants, vous devez arrêter de prendre ce médicament et consulter immédiatement un médecin : respiration lente ou superficielle, confusion, somnolence, rétrécissement des pupilles, nausées ou vomissements, constipation, perte d’appétit.</p>
+<p class=AmmCorpsTexte>Parlez à votre médecin ou pharmacien si vous ressentez l’un des symptômes suivants pendant que vous prenez TRAMADOL ALMUS : fatigue extrême, manque d'appétit, douleurs abdominales intenses, nausées, vomissements ou hypotension. Cela peut indiquer que vous avez une insuffisance surrénalienne (faible taux de cortisol). Si vous présentez ces symptômes, contactez votre médecin, qui décidera si vous devez prendre un supplément hormonal.</p>
+<p class=AmmCorpsTexteGras>Autres médicaments et TRAMADOL ALMUS 50 mg, gélule</p>
+<p class=AmmCorpsTexte>Informez votre médecin ou pharmacien si vous prenez, avez récemment pris ou pourriez prendre tout autre médicament.</p>
+<p class=AmmCorpsTexte>Il ne faut pas prendre TRAMADOL ALMUS avec des inhibiteurs de la MAO (médicaments destinés au traitement de la dépression).</p>
+<p class=AmmCorpsTexte>L’effet antalgique de TRAMADOL ALMUS peut être atténué et sa durée d’action raccourcie si vous prenez des médicaments contenant :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de la carbamazépine (un antiépileptique) ;</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de l’ondansétron (pour prévenir les nausées) ;</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Votre médecin vous dira si vous pouvez prendre ce médicament ALMUS et à quelle posologie.</p>
+<p class=AmmCorpsTexte>Le risque d’effets indésirables augmente :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous prenez ce médicament en même temps que d'autres analgésiques tels que la morphine et la codéine (également utilisées comme antitussifs) et de l'alcool. Vous pourriez vous sentir plus somnolent ou avoir l'impression de vous évanouir. Si cela se produit, informez-en votre médecin.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>L'utilisation concomitante de TRAMADOL ALMUS et de tranquillisants ou de somnifères (par ex. benzodiazépines) ou de gabapentine ou de prégabaline pour traiter l'épilepsie ou la douleur due à des problèmes nerveux (douleurs neuropathiques) augmente le risque de somnolence, de difficultés respiratoires (dépression respiratoire), de coma ou peut mettre la vie en danger. Pour cette raison, l'utilisation concomitante ne doit être envisagée que lorsque d'autres options thérapeutiques ne sont pas possibles. <span class=tlid-translation>Toutefois, si votre médecin vous prescrit du </span>TRAMADOL ALMUS<span class=tlid-translation> en association avec des médicaments sédatifs, la dose et la durée du traitement concomitant doivent être limitées par votre médecin. Veuillez informer votre médecin de tous les médicaments sédatifs que vous prenez et suivez attentivement les recommandations de votre médecin en matière de dose. Il peut être utile d’informer vos amis ou votre famille des signes et symptômes mentionnés ci-dessus. Contactez votre médecin lorsque vous rencontrez de tels symptômes.</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous prenez des médicaments qui facilitent ou susceptibles de provoquer des convulsions (crises d’épilepsie), comme certains antidépresseurs ou antipsychotiques. Le risque de crise d’épilepsie peut augmenter si vous prenez TRAMADOL ALMUS en même temps. Votre médecin vous dira si TRAMADOL ALMUS vous convient ;</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous prenez certains antidépresseurs, TRAMADOL ALMUS peut interagir avec ces médicaments et vous pourrez présenter un syndrome sérotoninergique (voir la rubrique 4 « Quels sont les effets indésirables éventuels ? ») ; </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous prenez des anticoagulants coumariniques (médicaments fluidifiant le sang), tels que la warfarine, en même temps que TRAMADOL ALMUS. L’effet de ces médicaments sur la coagulation peut s’en trouver modifié et il peut survenir des hémorragies ;</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous prenez des médicaments susceptibles d’augmenter l’accumulation du tramadol et, par conséquent, ses effets indésirables (tels que le ritonavir, la quinidine, la paroxétine, la fluoxétine, la sertraline, l’amitriptyline, l’isoniazide, le kétoconazole et l’érythromycine).</p>
+<p class=AmmCorpsTexteGras>TRAMADOL ALMUS 50 mg, gélule avec des aliments et boissons</p>
+<p class=AmmCorpsTexte><a name="_Toc142279012">Ne consommez pas d’alcool pendant le traitement par ce médicament, car cela accentuerait son effet.</a></p>
+<p class=AmmCorpsTexte>L’alimentation n’a pas d’influence sur l’action de TRAMADOL ALMUS.</p>
+<p class=AmmCorpsTexteGras>Enfants et adolescents </p>
+<p class=AmmCorpsTexte>Utilisation chez les enfants présentant des problèmes respiratoires :</p>
+<p class=AmmCorpsTexte>Le tramadol n’est pas recommandé chez les enfants présentant des problèmes respiratoires car les symptômes de toxicité du tramadol peuvent être plus graves chez ces enfants. </p>
+<p class=AmmCorpsTexteGras>Grossesse, allaitement et fertilité</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Si vous êtes enceinte ou que vous allaitez, si vous pensez être enceinte ou planifiez une grossesse, demandez conseil à votre médecin ou pharmacien avant de prendre ce médicament.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Il n’existe que très peu d’informations concernant la sécurité d’emploi du tramadol chez la femme enceinte. Vous ne devez donc pas utiliser ce médicament si vous êtes enceinte.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>L’utilisation chronique de tramadol pendant la grossesse peut entrainer un syndrome de sevrage chez le nouveau-né.</span></p>
+<p class=AmmCorpsTexte>Le tramadol est excrété dans le lait maternel. Pour cette raison, vous ne devez pas prendre ce médicament plus d’une fois au cours de la période d’allaitement ou, si vous prenez du TRAMADOL ALMUS plus d’une fois, vous devez interrompre l’allaitement.</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>D’après les données disponibles, le tramadol n’aurait pas d’influence sur la fertilité féminine et masculine.</span></p>
+<p class=AmmCorpsTexteGras>Conduite de véhicules et utilisation de machines</p>
+<p class=AmmCorpsTexte>Demandez à votre médecin si vous pouvez conduire ou utiliser des machines pendant le traitement par ce médicament. Il est important de savoir comment ce médicament vous affecte avant de conduire ou d'utiliser des machines. Ne conduisez pas ou n'utilisez pas de machines si vous vous sentez somnolent, étourdi, si vous avez une vision floue ou double ou si vous avez des difficultés à vous concentrer. Soyez particulièrement prudent au début du traitement, après une augmentation de la dose, après un changement de formulation et/ou en cas de prise simultanée d'autres médicaments.</p>
+    <p class="AmmAnnexeTitre1">
+        <a name="Ann3bCommentPrendre"><span id='3._COMMENT_PRENDRE_TRAMADOL_ALMUS_50_mg,_gélule_?'>3. COMMENT PRENDRE TRAMADOL ALMUS 50 mg, gélule ?</span></a>
+        <a href="#top" class="fr-link fr-icon-arrow-up-fill fr-link--icon-right lien-retour-hautdepage"
+           aria-label="Redirection vers le haut de page"
+           aria-describedby="tooltip-annexe-page-top-Ann3bCommentPrendre"></a>
+        <span id="tooltip-annexe-page-top-Ann3bCommentPrendre" class="fr-tooltip fr-placement" role="tooltip" aria-hidden="true">
+            Redirection vers le haut de page
+        </span>
+    </p>
+<p class=AmmCorpsTexte><a name="_Toc142279021">Veillez à toujours prendre ce médicament en suivant exactement les indications de votre médecin. Vous devez vérifier auprès de votre médecin ou pharmacien en cas de doute.</a></p>
+<p class=AmmCorpsTexte>Avant d’initier le traitement et régulièrement durant celui-ci, votre médecin discutera avec vous de ce qui peut être attendu de l’utilisation de ce médicament, de quand et pendant combien de temps vous devez le prendre, des situations dans lesquelles vous devez contacter votre médecin et du moment où vous devez arrêter le traitement (voir également la rubrique 2).</p>
+<p class=AmmCorpsTexte>La posologie sera ajustée en fonction de l'intensité de votre douleur et de votre sensibilité personnelle à la douleur. D'une manière générale, il faut prendre la dose minimale qui soulage la douleur. Ne prenez pas plus de 400 mg de tramadol chaque jour, sauf si votre médecin vous a dit que vous pouviez le faire. </p>
+<p class=AmmCorpsTexte>Sauf prescription contraire de votre médecin, la dose habituelle est :</p>
+<p class=AmmCorpsTexteGras><u>Adultes et adolescents à partir de 12 ans</u></p>
+<p class=AmmCorpsTexte>Habituellement, la dose initiale est d’une ou deux gélules de TRAMADOL ALMUS (équivalent à 50 mg ou 100 mg de chlorhydrate de tramadol). </p>
+<p class=AmmCorpsTexte>En fonction de la douleur, les effets durent environ 4 à 6 heures. </p>
+<p class=AmmCorpsTexteGras><u><span style='font-weight:normal'>Utilisation chez les enfants </span></u></p>
+<p class=AmmCorpsTexte>Ce médicament n’est pas destiné aux enfants de moins de 12 ans.</p>
+<p class=AmmCorpsTexte><u>Patients âgés</u></p>
+<p class=AmmCorpsTexte>Chez les patients âgés (plus de 75 ans), l’élimination du tramadol peut être retardée. Si tel est votre cas, votre médecin vous conseillera d'espacer les prises.</p>
+<p class=AmmCorpsTexte><u>Patients ayant une insuffisance hépatique/rénale / patients sous dialyse</u></p>
+<p class=AmmCorpsTexte>Les patients souffrant d’une insuffisance hépatique et/ou rénale grave ne doivent pas prendre ce médicament. Si vous présentez une insuffisance légère à modérée, votre médecin pourra vous recommander d'espacer les prises.</p>
+<p class=AmmCorpsTexteGras>Comment et quand prendre TRAMADOL ALMUS ?</p>
+<p class=AmmCorpsTexte>Les gélules doivent être administrées par voie orale.</p>
+<p class=AmmCorpsTexte>Avalez les gélules en entier, non divisées ni croquées, avec une quantité suffisante de liquide. </p>
+<p class=AmmCorpsTexte>Vous pouvez prendre les gélules à jeun ou au cours d’un repas.</p>
+<p class=AmmCorpsTexteGras>Combien de temps prendre TRAMADOL ALMUS ?</p>
+<p class=AmmCorpsTexte>Il ne faut pas prendre ce médicament pendant plus longtemps que nécessaire. Si vous avez besoin d'un traitement prolongé, votre médecin vérifiera régulièrement et fréquemment (au besoin en ménageant des pauses dans le traitement) si vous devez continuer à prendre ce médicament et à quelle posologie.</p>
+<p class=AmmCorpsTexte>Si vous avez l'impression que l'effet de ce médicament est trop fort ou trop faible, parlez-en à votre médecin ou à votre pharmacien.</p>
+<p class=AmmCorpsTexteGras>Si vous avez pris plus de TRAMADOL ALMUS 50 mg, gélule que vous n’auriez dû</p>
+<p class=AmmCorpsTexte>Si vous avez pris accidentellement une dose supplémentaire de TRAMADOL ALMUS, il n’y a généralement pas de conséquence négative. Prenez la dose suivante selon les modalités prescrites.</p>
+<p class=AmmCorpsTexte>Après la prise de doses très élevées de tramadol, des symptômes tels qu'une constriction des pupilles, des vomissements, une chute de la tension artérielle, une accélération du rythme cardiaque, un collapsus, une diminution du niveau de conscience pouvant aller jusqu'au coma (inconscience profonde), des crises d'épilepsie et des difficultés respiratoires pouvant conduire à un arrêt respiratoire peuvent survenir. Dans ce cas, appelez immédiatement un médecin. </p>
+<p class=AmmCorpsTexte>En cas de surdosage ou d'ingestion accidentelle, consultez immédiatement votre médecin ou votre pharmacien, ou contactez un centre antipoison indiquant le nom du médicament et la quantité prise. Il est recommandé d'apporter la notice du médicament au professionnel de santé.</p>
+<p class=AmmCorpsTexteGras>Si vous oubliez de prendre TRAMADOL ALMUS 50 mg, gélule</p>
+<p class=AmmCorpsTexte><a name="_Toc142279020">Si vous oubliez de prendre ce médicament, la douleur risque de réapparaître. </a></p>
+<p class=AmmCorpsTexte>Ne prenez pas de dose double pour compenser la dose que vous avez oublié de prendre, continuez simplement à prendre TRAMADOL ALMUS comme avant.</p>
+<p class=AmmCorpsTexteGras>Si vous arrêtez de prendre TRAMADOL ALMUS 50 mg, gélule </p>
+<p class=AmmCorpsTexte>Si vous interrompez ou arrêtez trop rapidement le traitement par ce médicament la douleur risque de réapparaître. </p>
+<p class=AmmCorpsTexte><span class=tlid-translation>Si vous souhaitez arrêter le traitement en raison d'effets désagréables, discutez-en au préalable avec votre médecin.</span></p>
+<p class=AmmCorpsTexte>Vous ne devez pas arrêter brutalement de prendre ce médicament, sauf indication contraire de votre médecin. Si vous souhaitez arrêter de prendre ce médicament, parlez-en d’abord à votre médecin, surtout si vous en prenez depuis longtemps. Votre médecin vous indiquera quand et comment arrêter, ceci pourra s’effectuer en diminuant progressivement la dose afin de réduire les risques d’apparition d’effets indésirables évitables (symptômes de sevrage).</p>
+<p class=AmmCorpsTexte>D’une manière générale, l’arrêt du traitement par TRAMADOL ALMUS n’entraîne pas d’effets. Néanmoins, dans de rares cas, certaines personnes ne se sentent pas bien quand elles arrêtent brutalement le traitement après avoir pris TRAMADOL ALMUS pendant quelque temps. Elles peuvent se sentir agitées, anxieuses, nerveuses ou chancelantes. Ces personnes peuvent présenter une hyperactivité, des troubles du sommeil et des troubles gastro-intestinaux. De très rares personnes peuvent avoir des crises de panique, des hallucinations, des perceptions anormales telles que démangeaisons, picotements et engourdissement ainsi que des bruits dans les oreilles (acouphènes). D’autres troubles inhabituels du système nerveux central tels que confusion, délire, changement de la perception de la personnalité (dépersonnalisation), changement de la perception de la réalité (déréalisation) et délire de persécution (paranoïa) ont été rarement observés.</p>
+<p class=AmmCorpsTexte>Si vous présentez l’un de ces troubles après l’arrêt du traitement par TRAMADOL ALMUS, consultez votre médecin.</p>
+<p class=AmmCorpsTexte>Si vous avez d’autres questions sur l’utilisation de ce médicament, demandez plus d’informations à votre médecin ou à votre pharmacien.</p>
+    <p class="AmmAnnexeTitre1">
+        <a name="Ann3bEffetsIndesirables"><span id='4._QUELS_SONT_LES_EFFETS_INDESIRABLES_EVENTUELS_?'>4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</span></a>
+        <a href="#top" class="fr-link fr-icon-arrow-up-fill fr-link--icon-right lien-retour-hautdepage"
+           aria-label="Redirection vers le haut de page"
+           aria-describedby="tooltip-annexe-page-top-Ann3bEffetsIndesirables"></a>
+        <span id="tooltip-annexe-page-top-Ann3bEffetsIndesirables" class="fr-tooltip fr-placement" role="tooltip" aria-hidden="true">
+            Redirection vers le haut de page
+        </span>
+    </p>
+<p class=AmmCorpsTexte><a name="_Toc142279023">Comme tous les médicaments, ce médicament peut provoquer des effets indésirables, mais ils ne surviennent pas systématiquement chez tout le monde.</a></p>
+<p class=AmmCorpsTexteGras>Vous devez immédiatement voir un médecin s’il apparaît des symptômes de réaction allergique tels qu’un œdème du visage, de la langue et/ou de la gorge et/ou des difficultés de déglutition ou une urticaire s’accompagnant de difficultés respiratoires.</p>
+<p class=AmmCorpsTexte>Sous traitement par du tramadol, les effets indésirables les plus fréquents sont les nausées et les sensations vertigineuses, qui surviennent chez plus de 1 patient sur 10.</p>
+<p class=AmmCorpsTexteGras>Très fréquents (peuvent affecter plus de 1 patient sur 10)</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Nausées, </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Sensations vertigineuses.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt;page-break-after:avoid'>Fréquents (peuvent affecter jusqu’à 1 patient sur 10)</p>
+<p class=AmmListePuces1 style='text-align:justify;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Maux de tête, somnolence,</p>
+<p class=AmmListePuces1 style='text-align:justify;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Fatigue,</p>
+<p class=AmmListePuces1 style='text-align:justify;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Constipation, bouche sèche, vomissements,</p>
+<p class=AmmListePuces1 style='text-align:justify;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Sueurs (hyperhidrose).</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Peu fréquents (peuvent affecter jusqu’à 1 patient sur 100)</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Effets sur le cœur et la circulation sanguine (palpitations, accélération des battements cardiaques, sensation d’évanouissement ou état de choc). Ces effets indésirables surviennent particulièrement en position debout ou lors des efforts physiques,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Haut-le-cœur, troubles gastriques (par exemple sensation de pesanteur dans l’estomac, ballonnement), diarrhée,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Réactions cutanées (par exemple démangeaisons, éruption).</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Rare (peuvent affecter jusqu’à 1 patient sur 1 000)</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Réactions allergiques (par exemple difficultés respiratoires, sifflements respiratoires, œdème de la peau) et choc (défaillance circulatoire brutale) sont survenus dans de très rares cas,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Ralentissement des battements cardiaques,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Augmentation de la pression artérielle,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Sensations anormales (par exemple démangeaisons, picotements, engourdissement), tremblement, crises d’épilepsie, contractions musculaires, mouvements non coordonnés, perte de conscience transitoire (syncope), troubles de la parole,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Des crises d’épilepsie sont essentiellement survenues après la prise de doses élevées de tramadol ou après la prise simultanée de médicaments susceptibles de provoquer des crises d’épilepsie,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Modification de l’appétit,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Hallucinations, confusion, troubles du sommeil, délire, anxiété et cauchemars,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Des troubles psychologiques peuvent apparaître après traitement par le tramadol. Leur intensité et leur nature sont variables (suivant la personnalité du patient et la durée du traitement). Ils peuvent se traduire par des modifications de l’humeur (le plus souvent euphorie, parfois irritabilité), des modifications de l’activité (généralement diminution, parfois augmentation) et une diminution des fonctions cognitives et des perceptions sensorielles (altérations de la sensibilité ou de la perception pouvant conduire à des erreurs de jugement),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Une dépendance peut survenir.. Après l’arrêt brutal du traitement, des cas de syndrome de sevrage peuvent survenir (voir rubrique « Si vous arrêtez de prendre TRAMADOL ALMUS 50 mg, gélule »),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vision floue, rétrécissement de la pupille (myosis), dilatation excessive de la pupille (mydriase), </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Respiration lente, essoufflement (dyspnée),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Une aggravation de l’asthme a été rapportée, mais il n’est pas prouvé que le tramadol en soit la cause. Si vous dépassez les doses recommandées ou prenez en même temps d’autres médicaments qui ont un effet dépresseur sur la fonction cérébrale, un ralentissement de votre respiration peut survenir,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Faiblesse musculaire,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Difficultés pour uriner ou douleurs lors des mictions, diminution du volume des urines (dysurie).</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt;page-break-after:avoid'>Très rares (peuvent affecter jusqu’à 1 patient sur 10 000) :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Augmentation des enzymes hépatiques.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Fréquence indéterminée (ne peut être estimée d’après les données disponibles)</p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Diminution du taux de sucre dans le sang,</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Hoquet,</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Syndrome sérotoninergique, qui peut se manifester par des modifications de l’état mental (par exemple, une agitation, des hallucinations, un coma), et d’autres effets, tels que de la fièvre, une augmentation de la fréquence cardiaque, une tension artérielle instable, des contractions musculaires involontaires, une rigidité musculaire, un manque de coordination et/ou des symptômes gastro-intestinaux (par exemple des nausées, des vomissements, une diarrhée) (voir rubrique 2 «Quelles sont les informations à connaître avant de prendre TRAMADOL ALMUS»). </p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Déclaration des effets secondaires</p>
+<p class=AmmCorpsTexte>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin, votre pharmacien ou à votre infirmier/ère. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Vous pouvez également déclarer les effets indésirables directement via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet:<span style='color:red'> </span><a href="https://signalement.social-sante.gouv.fr/">https://signalement.social-sante.gouv.fr/</a>.<span style='color:red'> </span></p>
+<p class=AmmCorpsTexte>En signalant les effets indésirables, vous contribuez à fournir davantage d’informations sur la sécurité du médicament.</p>
+    <p class="AmmAnnexeTitre1">
+        <a name="Ann3bConservation"><span id='5._COMMENT_CONSERVER_TRAMADOL_ALMUS_50_mg,_gélule_?'>5. COMMENT CONSERVER TRAMADOL ALMUS 50 mg, gélule ?</span></a>
+        <a href="#top" class="fr-link fr-icon-arrow-up-fill fr-link--icon-right lien-retour-hautdepage"
+           aria-label="Redirection vers le haut de page"
+           aria-describedby="tooltip-annexe-page-top-Ann3bConservation"></a>
+        <span id="tooltip-annexe-page-top-Ann3bConservation" class="fr-tooltip fr-placement" role="tooltip" aria-hidden="true">
+            Redirection vers le haut de page
+        </span>
+    </p>
+<p class=AmmCorpsTexte><a name="_Toc142279026">Tenir ce médicament hors de la vue et de la portée des enfants.</a></p>
+<p class=AmmCorpsTexte>Conservez ce médicament dans un espace de stockage sûr et sécurisé, où d’autres personnes ne peuvent pas y avoir accès. Il peut nuire gravement et même être mortel pour les personnes lorsqu’il ne leur a pas été prescrit.</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>N’utilisez pas ce médicament après la date de péremption indiquée sur </span>la plaquette et la boîte <span lang=FR-BE>après EXP. La date de péremption fait référence au dernier jour de ce mois.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>A conserver dans l’emballage d’origine.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Ne jetez aucun médicament au tout-à-l’égout <span style='color:black'>ou avec </span>les ordures ménagères. Demandez à votre pharmacien d’éliminer les médicaments que vous n’utilisez plus. Ces mesures contribueront à protéger l’environnement.</span></p>
+    <p class="AmmAnnexeTitre1">
+        <a name="Ann3bEmballage"><span id='6._CONTENU_DE_L_EMBALLAGE_ET_AUTRES_INFORMATIONS'>6. CONTENU DE L’EMBALLAGE ET AUTRES INFORMATIONS</span></a>
+        <a href="#top" class="fr-link fr-icon-arrow-up-fill fr-link--icon-right lien-retour-hautdepage"
+           aria-label="Redirection vers le haut de page"
+           aria-describedby="tooltip-annexe-page-top-Ann3bEmballage"></a>
+        <span id="tooltip-annexe-page-top-Ann3bEmballage" class="fr-tooltip fr-placement" role="tooltip" aria-hidden="true">
+            Redirection vers le haut de page
+        </span>
+    </p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">Ce que contient TRAMADOL ALMUS 50 mg, gélule :</a></p>
+<p class=AmmListePuces1><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La substance active est :</p>
+<p class=AmmComposition style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;page-break-after:avoid'>Chlorhydrate de tramadol....................................................................................................... 50 mg</p>
+<p class=AmmCorpsTexte align=center style='text-align:center'>Pour une gélule.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les autres composants sont : </p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt'>Cellulose microcristalline, carboxyméthylamidon sodique (type A), silice colloïdale anhydre, stéarate de magnésium</p>
+<p class=AmmCorpsTexte style='margin-left:17.85pt'><span class=ammcorpstextegrascar0><i><u><span style='color:black'>Enveloppe de la gélule</span></u></i></span><span class=ammcorpstextegrascar0><span style='color:black'> : </span></span>gélatine, dioxyde de titane (E171).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">Qu’est-ce que TRAMADOL ALMUS 50 mg, gélule et contenu de l’emballage extérieur</a></p>
+<p class=AmmCorpsTexte>Les gélules sont de couleur blanche, contenant une poudre de couleur blanc à blanc cassé.</p>
+<p class=AmmCorpsTexte>TRAMADOL ALMUS est disponible en boîtes de 10, 20, 30, 60 et 100 gélules sous plaquettes. </p>
+<p class=AmmCorpsTexte>Toutes les présentations peuvent ne pas être commercialisées. </p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bTituAMM">Titulaire de l’autorisation de mise sur le marché</a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'><a name="_Toc142279031">ALMUS FRANCE</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>211 AVENUE DES GRESILLONS</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>92230 GENNEVILLIERS</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bExploitAMM">Exploitant de l’autorisation de mise sur le marché</a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'><a name="_Toc142279032">ALMUS FRANCE</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>211 AVENUE DES GRESILLONS</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>92230 GENNEVILLIERS</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bFab">Fabricant</a></p>
+<p class=MsoBodyText style='line-height:12.5pt'><a name="_Toc142279033"><span class=AmmTitulaireNomCar><span lang=ES style='font-size:10.0pt'>Rx Farma (Malta) Limited</span></span></a></p>
+<p class=AmmTitulaireAdresse><span lang=IT style='font-size:10.0pt;text-transform: uppercase'>Kw20a, Zona Industrijali Ta’Kordin</span></p>
+<p class=AmmTitulaireAdresse><span lang=IT style='font-size:10.0pt;text-transform: uppercase'>Paola, PLA 3000</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>MALTE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bNomsMediEEE">Noms du médicament dans les Etats membres de l'Espace Economique Européen</a></p>
+<p class=AmmCorpsTexteGras>Ce médicament est autorisé dans les Etats membres de l'Espace Economique Européen sous les noms suivants : Conformément à la réglementation en vigueur.</p>
+<p class=AmmCorpsTexte>[À compléter ultérieurement par le titulaire]</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">La dernière date à laquelle cette notice a été révisée est :</a></p>
+<p class=AmmCorpsTexte>[à compléter ultérieurement par le titulaire]</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bAutres">Autres</a></p>
+<p class=AmmCorpsTexte>Des informations détaillées sur ce médicament sont disponibles sur le site Internet de l’ANSM (France).</p>
+<p class=AmmCorpsTexte> </p>
+<p class=AmmCorpsTexte> </p>
+</BODY>
+</HTML>
+    </div>
+  </div>
+</div>
+                </div>
+                          </div>
+          
+                    <div class="fr-grid-row link-haut-page fr-no-print">
+            <div class="fr-col">
+              <p class="aligncenter">
+                <a class="fr-link fr-icon-arrow-up-fill fr-link--icon-left" href="#top">Haut de page</a>
+              </p>
+            </div>
+          </div>
+                  </div>
+      </div>
+    </div>
+  </div>
+        </div>
+      </div>
+    </main>
+    <footer class="fr-footer" role="contentinfo" id="footer-8605">
+  <div class="fr-container">
+    <div class="fr-footer__body">
+      <div class="fr-footer__brand fr-enlarge-link">
+                <a id="footer-operator" href="/"
+           role="link"
+           aria-describedby="tooltip-footer-home"
+           aria-label="Retour à la page d'accueil de la plateforme Base de Données Publique des Médicaments du MINISTÈRE DU TRAVAIL, DE LA SANTÉ, DES SOLIDARITÉS"
+        >
+          <p class="fr-logo" aria-label="Logo du MINISTÈRE DU TRAVAIL, DE LA SANTÉ, DES SOLIDARITÉS">
+            MINISTÈRE
+            <br>DU TRAVAIL, DE LA SANTÉ,
+            <br>DES SOLIDARITÉS
+            <br>ET DES FAMILLES
+          </p>
+        </a>
+        <span id="tooltip-footer-home" class="fr-tooltip fr-placement" role="tooltip" aria-hidden="true">
+          Retour à la page d'accueil de la plateforme Base de Données Publique des Médicaments du MINISTÈRE DU TRAVAIL, DE LA SANTÉ, DES SOLIDARITÉS
+        </span>
+      </div>
+      <div class="fr-footer__content">
+        <ul class="fr-footer__content-list">
+          <li class="fr-footer__content-item">
+            <a target="_blank"
+               role="link"
+               rel="noopener external"
+               aria-describedby="tooltip-footer-legifrance"
+               aria-label="Lien de redirection vers la plateforme legifrance.gouv.fr – nouvelle fenêtre"
+               id="footer__content-link-8606"
+               class="fr-footer__content-link"
+               href="https://legifrance.gouv.fr"
+            >legifrance.gouv.fr</a>
+            <span id="tooltip-footer-legifrance" class="fr-tooltip fr-placement" role="tooltip" aria-hidden="true">
+              Lien de redirection vers la plateforme legifrance.gouv.fr – nouvelle fenêtre
+            </span>
+          </li>
+          <li class="fr-footer__content-item">
+            <a target="_blank" rel="noopener external"
+               aria-describedby="tooltip-footer-gouvernement"
+               aria-label="Lien de redirection vers la plateforme gouvernement.fr – nouvelle fenêtre"
+               id="footer__content-link-8607"
+               class="fr-footer__content-link" href="https://gouvernement.fr">gouvernement.fr</a>
+            <span id="tooltip-footer-gouvernement" class="fr-tooltip fr-placement" role="tooltip" aria-hidden="true">
+              Lien de redirection vers la plateforme gouvernement.fr – nouvelle fenêtre
+            </span>
+          </li>
+          <li class="fr-footer__content-item">
+            <a target="_blank" rel="noopener external"
+               role="link"
+               aria-describedby="tooltip-footer-service-public"
+               aria-label="Lien de redirection vers la plateforme service-public.fr – nouvelle fenêtre"
+               id="footer__content-link-8608"
+               class="fr-footer__content-link" href="https://service-public.fr">service-public.fr</a>
+            <span id="tooltip-footer-service-public" class="fr-tooltip fr-placement" role="tooltip" aria-hidden="true">
+              Lien de redirection vers la plateforme service-public – nouvelle fenêtre
+            </span>
+          </li>
+          <li class="fr-footer__content-item">
+            <a target="_blank" rel="noopener external"
+               role="link"
+               aria-describedby="tooltip-footer-data-gouv"
+               aria-label="Lien de redirection vers la plateforme data.gouv.fr – nouvelle fenêtre"
+               id="footer__content-link-8609" class="fr-footer__content-link"
+               href="https://data.gouv.fr">data.gouv.fr</a>
+            <span id="tooltip-footer-data-gouv" class="fr-tooltip fr-placement" role="tooltip" aria-hidden="true">
+              Lien de redirection vers la plateforme data.gouv.fr – nouvelle fenêtre
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="fr-footer__partners">
+      <p>Nos partenaires</p>
+      <div class="fr-footer__partners-logos">
+        <div class="fr-footer__partners-sub">
+          <ul aria-labelledby="navigation-footer-parteners">
+            <li>
+              <a class="fr-footer__partners-link" href="https://ansm.sante.fr/"
+                 role="link" target="_blank" rel="noopener external"
+                 aria-label="Lien de redirection vers la plateforme de l'Agence nationale de sécurité du médicament et des produits de santé (ANSM)- nouvelle fenêtre"
+                 aria-describedby="tooltip-footer-partener-ansm"
+              >
+                <img src="/build/dsfr/images_site/logo/ANSM_logo.svg"
+                     id="navigation-footer-parteners-logo-ansm"
+                     class="fr-footer__partners__logo-size fr-responsive-img"
+                     alt="Logo de l'Agence Nationale de Sécurité du Médicament et des Produits de Santé (ANSM)"
+                     aria-label="Lien de redirection vers le site internet de l'Agence Nationale de Sécurité du Médicament et des Produits de Santé - ansm.sante.fr"
+                     role="img" aria-hidden="true"
+                     style="box-shadow: none !important;  width: 160px !important; height: 90px !important;"
+                />
+              </a>
+              <span id="tooltip-footer-ansm" class="fr-tooltip fr-placement" role="tooltip" aria-hidden="true">
+                Lien de redirection vers la plateforme de l'Agence nationale de sécurité du médicament et des produits de santé (ANSM)- nouvelle fenêtre
+              </span>
+            </li>
+            <li>
+              <a class="fr-footer__partners-link" href="https://www.has-sante.fr/"
+                 role="link" target="_blank" rel="noopener external"
+                 aria-label="Lien de redirection vers la plateforme de la Haute Autorité de santé (HAS)- nouvelle fenêtre"
+                 aria-describedby="tooltip-footer-has"
+              >
+                <img
+                  src="/build/dsfr/images_site/logo/Haute_Autorite_de_Sante_Logo.svg"
+                  id="navigation-footer-parteners-logo-haute-autorite-de-sante"
+                  class="fr-footer__partners__logo-size"
+                  alt="Logo Haute Autorité de Santé"
+                  aria-label="Lien de redirection vers le site internet d'Haute Autorité de Sante - has-sante.fr"
+                  aria-hidden="true"
+                  style="box-shadow: none !important;  width: 160px !important; height: 90px !important;"
+                />
+              </a>
+              <span id="tooltip-footer-has" class="fr-tooltip fr-placement" role="tooltip" aria-hidden="true">
+                Lien de redirection vers la plateforme de la Haute Autorité de santé (HAS)- nouvelle fenêtre
+              </span>
+            </li>
+            <li>
+              <a class="fr-footer__partners-link" href="https://www.ameli.fr/"
+                 role="link" target="_blank" rel="noopener external"
+                 aria-label="Lien de redirection vers la plateforme de l'Assurance Maladie (AMELI)- nouvelle fenêtre"
+                 aria-describedby="tooltip-footer-ameli"
+              >
+                <img src="/build/dsfr/images_site/logo/assurance-maladie-logo.svg"
+                     id="navigation-footer-parteners-logo-assurance-maladie"
+                     class="fr-footer__partners__logo-size fr-responsive-img"
+                     alt="Logo de l'assurance Maladie"
+                     aria-label="Lien de redirection vers le site internet d'Assurance Maladie - ameli.fr"
+                     role="img" aria-hidden="true"
+                     style="box-shadow: none !important;  width: 160px !important; height: 90px !important;"
+                />
+              </a>
+              <span id="tooltip-footer-ameli" class="fr-tooltip fr-placement" role="tooltip" aria-hidden="true">
+                Lien de redirection vers la plateforme de l'Assurance Maladie (AMELI)- nouvelle fenêtre
+              </span>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="fr-footer__bottom">
+      <ul class="fr-footer__bottom-list" aria-labelledby="navigation-footer-bottom-link">
+        <li class="fr-footer__bottom-item">
+          <a class="fr-footer__bottom-link" id="navigation-footer-bottom-link-Accessibilite"
+             role="link"
+             aria-label="Lien de redirection vers la page Accessibilité"
+             aria-describedby="tooltip-footer-accessibility-link"
+             href="/accessibilite">Accessibilité : partiellement conforme</a>
+          <span id="tooltip-footer-accessibility-link" class="fr-tooltip fr-placement" role="tooltip" aria-hidden="true">
+            Lien de redirection vers la page Accessibilité
+          </span>
+        </li>
+        <li class="fr-footer__bottom-item">
+          <a class="fr-footer__bottom-link" id="navigation-footer-bottom-link-mentions-legales"
+             href="/mentions-legales"
+             role="link"
+             aria-label="Lien de redirection vers la page des Mentions Légales"
+             aria-describedby="tooltip-footer-mentions-legales-link"
+          >Mentions légales</a>
+          <span id="tooltip-footer-mentions-legales-link" class="fr-tooltip fr-placement" role="tooltip" aria-hidden="true">
+            Lien de redirection vers la page des Mentions Légales
+          </span>
+        </li>
+        <li class="fr-footer__bottom-item">
+          <a class="fr-footer__bottom-link" id="navigation-footer-bottom-link-donnee-personnelles"
+             href="/donnees-personnelles"
+             role="link"
+             aria-label="Lien de redirection vers la page des Données personnelles"
+             aria-describedby="tooltip-footer-donnee-personnelles-link"
+          >Données personnelles</a>
+          <span id="tooltip-footer-donnee-personnelles-link" class="fr-tooltip fr-placement" role="tooltip" aria-hidden="true">
+            Lien de redirection vers la page des Données personnelles
+          </span>
+        </li>
+        <li class="fr-footer__bottom-item">
+          <a class="fr-footer__bottom-link" id="navigation-footer-bottom-link-plan-du-site"
+             href="/plan"
+             role="link"
+             aria-label="Lien de redirection vers la page Plan du site"
+             aria-describedby="tooltip-footer-plan-du-site-link"
+          >Plan du site</a>
+          <span id="tooltip-footer-plan-du-site-link" class="fr-tooltip fr-placement" role="tooltip" aria-hidden="true">
+            Lien de redirection vers la page Plan du site
+          </span>
+        </li>
+        <li class="fr-footer__bottom-item">
+          <a class="fr-footer__bottom-link fr-icon-theme-fill" id="navigation-footer-bottom-link-parametres-affichage" href="#"
+             aria-controls="fr-theme-modal"
+             data-fr-opened="false"
+             style="z-index: 1600"
+             aria-label="Paramètres d'affichage"
+             aria-describedby="tooltip-footer-parametres-affichage-link"
+             id="button-8615">Paramètres d&#039;affichage</a>
+          <span id="tooltip-footer-parametres-affichage-link" class="fr-tooltip fr-placement" role="tooltip" aria-hidden="true">
+            Paramètres d'affichage
+          </span>
+        </li>
+      </ul>
+      <div class="fr-footer__bottom-copy">
+        <p>
+          Sauf mention contraire, tous les contenus de ce site sont sous <a
+            href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" role="link" target="_blank"
+            rel="noopener external"
+            aria-describedby="tooltip-footer-licence-link"
+            aria-label="Lien de redirection vers les mentions de la licence Etalab - nouvelle fenêtre"
+          >licence etalab-2.0</a>
+          <span id="tooltip-footer-licence-link" class="fr-tooltip fr-placement" role="tooltip" aria-hidden="true">
+            Lien de redirection vers les mentions de la licence Etalab - nouvelle fenêtre
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+</div>
+<dialog id="fr-theme-modal" class="fr-modal" aria-labelledby="fr-theme-modal-title">
+  <div class="fr-container fr-container--fluid fr-container-md">
+    <div class="fr-grid-row fr-grid-row--center">
+      <div class="fr-col-12 fr-col-md-6 fr-col-lg-4">
+        <div class="fr-modal__body">
+          <div class="fr-modal__header">
+            <button class="fr-btn--close fr-btn" aria-controls="fr-theme-modal">
+              Fermer
+            </button>
+          </div>
+          <div class="fr-modal__content">
+            <h1 id="fr-theme-modal-title" class="fr-modal__title">
+              Paramètres d’affichage
+            </h1>
+            <div id="fr-display" class="fr-display">
+              <fieldset class="fr-fieldset" id="display-fieldset">
+                <legend class="fr-fieldset__legend--regular fr-fieldset__legend" id="display-fieldset-legend">
+                  Choisissez un thème pour personnaliser l’apparence du site.
+                </legend>
+                <div class="fr-fieldset__element">
+                  <div class="fr-radio-group fr-radio-rich">
+                    <input value="light" type="radio" id="fr-radios-theme-light" name="fr-radios-theme" tabindex="1">
+                    <label class="fr-label" for="fr-radios-theme-light">
+                      Thème clair
+                    </label>
+                    <div class="fr-radio-rich__pictogram">
+                      <svg aria-hidden="true" class="fr-artwork fr-svg-modal" viewBox="0 0 80 80">
+                        <use class="fr-artwork-decorative"
+                             href="/build/dsfr/artwork/pictograms/environment/sun.svg#artwork-decorative"></use>
+                        <use class="fr-artwork-minor"
+                             href="/build/dsfr/artwork/pictograms/environment/sun.svg#artwork-minor"></use>
+                        <use class="fr-artwork-major"
+                             href="/build/dsfr/artwork/pictograms/environment/sun.svg#artwork-major"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="fr-fieldset__element">
+                  <div class="fr-radio-group fr-radio-rich">
+                    <input value="dark" type="radio" id="fr-radios-theme-dark" name="fr-radios-theme">
+                    <label class="fr-label" for="fr-radios-theme-dark">
+                      Thème sombre
+                    </label>
+                    <div class="fr-radio-rich__pictogram">
+                      <svg aria-hidden="true" class="fr-artwork fr-svg-modal" viewBox="0 0 80 80">
+                        <use class="fr-artwork-decorative"
+                             href="/build/dsfr/artwork/pictograms/environment/moon.svg#artwork-decorative"></use>
+                        <use class="fr-artwork-minor"
+                             href="/build/dsfr/artwork/pictograms/environment/moon.svg#artwork-minor"></use>
+                        <use class="fr-artwork-major"
+                             href="/build/dsfr/artwork/pictograms/environment/moon.svg#artwork-major"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="fr-fieldset__element">
+                  <div class="fr-radio-group fr-radio-rich">
+                    <input value="system" type="radio" id="fr-radios-theme-system" name="fr-radios-theme">
+                    <label class="fr-label" for="fr-radios-theme-system">
+                      Système
+                      <span
+                        class="fr-hint-text">Utilise les paramètres système</span>
+                    </label>
+                    <div class="fr-radio-rich__pictogram">
+                      <svg aria-hidden="true" class="fr-artwork fr-svg-modal" viewBox="0 0 80 80">
+                        <use class="fr-artwork-decorative"
+                             href="/build/dsfr/artwork/pictograms/system/system.svg#artwork-decorative"></use>
+                        <use class="fr-artwork-minor"
+                             href="/build/dsfr/artwork/pictograms/system/system.svg#artwork-minor"></use>
+                        <use class="fr-artwork-major"
+                             href="/build/dsfr/artwork/pictograms/system/system.svg#artwork-major"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</dialog>
+  
+          <dialog aria-labelledby="fr-modal-tag--title" id="fr-modal-tag-remboursable" class="fr-modal">
+    <div class="fr-container fr-container--fluid fr-container-sm">
+      <div class="fr-grid-row fr-grid-row--center">
+        <div class="fr-col-12 fr-col-md-4">
+          <div class="fr-modal__body">
+            <div class="fr-modal__header">
+              <button class="fr-btn--close fr-btn" aria-controls="fr-modal-tag-remboursable">Fermer</button>
+            </div>
+            <div class="fr-modal__content">
+              <h1 id="fr-modal-tag--title" class="fr-modal__title">Remboursable</h1>
+              <p id="fr-modal-tag--content">Cela signifie que le médicament peut être pris en charge par les organismes d&#039;Assurance Maladie, s&#039;il est prescrit dans le cadre d&#039;une indication remboursable.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+        <dialog aria-labelledby="fr-modal-tag--title" id="fr-modal-tag-ordonnance" class="fr-modal">
+    <div class="fr-container fr-container--fluid fr-container-sm">
+      <div class="fr-grid-row fr-grid-row--center">
+        <div class="fr-col-12 fr-col-md-4">
+          <div class="fr-modal__body">
+            <div class="fr-modal__header">
+              <button class="fr-btn--close fr-btn" aria-controls="fr-modal-tag-ordonnance">Fermer</button>
+            </div>
+            <div class="fr-modal__content">
+              <h1 id="fr-modal-tag--title" class="fr-modal__title">Sur ordonnance uniquement</h1>
+              <p id="fr-modal-tag--content">Cela signifie que le médicament est délivré uniquement sur ordonnance, et doit donc être prescrit par un professionnel de santé (médecin, sage-femme, dentiste).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+        <dialog aria-labelledby="fr-modal-tag--title" id="fr-modal-tag-hospitalier" class="fr-modal">
+    <div class="fr-container fr-container--fluid fr-container-sm">
+      <div class="fr-grid-row fr-grid-row--center">
+        <div class="fr-col-12 fr-col-md-4">
+          <div class="fr-modal__body">
+            <div class="fr-modal__header">
+              <button class="fr-btn--close fr-btn" aria-controls="fr-modal-tag-hospitalier">Fermer</button>
+            </div>
+            <div class="fr-modal__content">
+              <h1 id="fr-modal-tag--title" class="fr-modal__title">Usage hospitalier</h1>
+              <p id="fr-modal-tag--content">Cela signifie que le médicament est réservé à l&#039;usage hospitalier et n&#039;est donc pas disponible dans les pharmacies de ville.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+        <dialog aria-labelledby="fr-modal-tag--title" id="fr-modal-tag-generique" class="fr-modal">
+    <div class="fr-container fr-container--fluid fr-container-sm">
+      <div class="fr-grid-row fr-grid-row--center">
+        <div class="fr-col-12 fr-col-md-4">
+          <div class="fr-modal__body">
+            <div class="fr-modal__header">
+              <button class="fr-btn--close fr-btn" aria-controls="fr-modal-tag-generique">Fermer</button>
+            </div>
+            <div class="fr-modal__content">
+              <h1 id="fr-modal-tag--title" class="fr-modal__title">Générique</h1>
+              <p id="fr-modal-tag--content">Cela signifie que le médicament fait partie d&#039;un groupe générique.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  </body>
+</html>
